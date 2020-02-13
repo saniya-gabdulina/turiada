@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Turiada</title>
 </head>
+
 <body>
     <header>
         <div class="container">
-           <nav class="header__nav">
-            <div class="logo"></div>
-            <div class="social"></div>
-           </nav>
-           <div class="header-text">
-               <div class="header-text__title"></div>
-               <button class="button"></button>
-           </div>
+            <nav class="header__nav">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <div class="social">
+                    <a href="#">Группа Вконтакте</a>
+                    <a href="#">Наш чат телеграмм</a>
+                </div>
+            </nav>
+            <div class="header-content">
+                <div class="header-content__title">Сделай шаг
+                    <span> навстречу туризму</span> </div>
+                <div class="header-content__text">Если в тебе живет дух приключений и путешествий, то проект “Туриада”
+                    поможет тебе на пути к ним</div>
+                <button class="button">Хочу участвовать</button>
+            </div>
         </div>
     </header>
     <main>
@@ -25,19 +35,19 @@
                 <h2 class="section__title">Туриада это...</h2>
                 <div class="description-card">
                     <div class="description-card__item">
-                        <img src="" alt="">
+                        <img src="img/description/des_img-1.png" alt="image">
                         <p>Интересные туристические мероприятия</p>
                     </div>
                     <div class="description-card__item">
-                        <img src="" alt="">
+                        <img src="img/description/des_img-2.png" alt="image">
                         <p>Накопление баллов в личном рейтинге активности туриста</p>
                     </div>
                     <div class="description-card__item">
-                        <img src="" alt="">
+                        <img src="img/description/des_img-3.png" alt="image">
                         <p>Сувениры, подарки и ценные призы за участие в Туриаде</p>
                     </div>
                     <div class="description-card__item">
-                        <img src="" alt="">
+                        <img src="img/description/des_img-4.png" alt="image">
                         <p>Незабываемые приключения и экспедиции</p>
                     </div>
                 </div>
@@ -49,29 +59,32 @@
                 <div class="direction-card">
                     <div class="direction-card__item">
                         <p>
-                            <div class="title"></div>
-                            <div class="text"></div>
+                            <div class="title">01</div>
+                            <div class="text">Нажимай кнопку
+                                “Стать участником”,
+                                укажи ФИО и фото</div>
                         </p>
                     </div>
                     <div class="direction-card__item">
                         <p>
-                            <div class="title"></div>
-                            <div class="text"></div>
+                            <div class="title">02</div>
+                            <div class="text">Выбери интересное для тебя по теме мероприятие</div>
                         </p>
                     </div>
                     <div class="direction-card__item">
                         <p>
-                            <div class="title"></div>
-                            <div class="text"></div>
+                            <div class="title">03</div>
+                            <div class="text">После участия
+                                в мероприятии тебе зачислят бонуcы</div>
                         </p>
                     </div>
                     <div class="direction-card__item">
                         <p>
-                            <div class="title"></div>
-                            <div class="text"></div>
+                            <div class="title">04</div>
+                            <div class="text">Накапливай баллы, получай звания и фирменные подарки</div>
                         </p>
                     </div>
-                    <button class="button"></button>
+                    <button class="button">Стать участником</button>
                 </div>
             </div>
         </section>
@@ -80,88 +93,204 @@
                 <h2 class="section__title"></h2>
                 <div class="program-card">
                     <div class="program-card__item">
-                        <img src="" alt="">
-                        <button class="button"></button>
+                        <img src="img/program/img-1.png" alt="image">
+                        <span>Тренировки</span>
                     </div>
                     <div class="program-card__item">
-                        <img src="" alt="">
-                        <button class="button"></button>
+                        <img src="img/program/img-2.png" alt="image">
+                        <span>Обучение</span>
                     </div>
                     <div class="program-card__item">
-                        <img src="" alt="">
-                        <button class="button"></button>
+                        <img src="img/program/img-3.png" alt="image">
+                        <span>Походы на выходных</span>
                     </div>
                     <div class="program-card__item">
-                        <img src="" alt="">
-                        <button class="button"></button>
+                        <img src="img/program/img-4.png" alt="image">
+                        <span>Экспедиции</span>
                     </div>
                     <div class="program-card__item">
-                        <img src="" alt="">
-                        <button class="button"></button>
+                        <img src="img/program/img-5.png" alt="image">
+                        <span>Соревнования</span>
                     </div>
                     <div class="program-card__text">
-                        <div class="title"></div>
-                        <p></p>
-                        <button class="text__button"></button>
+                        <div class="title">Хотите знать
+                            о всех новых мероприятиях?</div>
+                        <p>Подпишитесь на нас
+                            и получай новости о новых мероприятиях первым</p>
+                        <button class="text__button">Подписаться</button>
                     </div>
                 </div>
             </div>
         </section>
         <section class="skills">
             <div class="container">
-                <h2 class="section__title"></h2>
+                <h2 class="section__title">Участвуй и прокачивай свои навыки 💪🏻</h2>
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="img/skills/skills__img-1.png" alt="">
+                            <p> Работай с веревками в лесу и на скалах<span>Вяжем узлы, лазаем по скалам, разбираем
+                                    снаряжение и тонкости горных походов</span></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/skills/skills__img-2.png" alt="">
+                            <p> Управляй байдаркой, рафтом и катамараном<span>Что такое сплавное снаряжение и как его
+                                    использовать. Куда можно отправиться сплавляться и как не теряться на реке </span>
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/skills/skills__img-3.png" alt="">
+                            <p> Знакомся с походами на велосипедах<span>Как выбрать и настроить велосипед, как
+                                    подготовить его к сезону или походу</span></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/skills/skills__img-4.png" alt="">
+                            <p> Умей работать
+                                с электроникой<span>Как использовать навигатор, телефон, камеру в лесу с пользой? Как
+                                    заряжать и обслуживать технику</span></p>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
 
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
             </div>
         </section>
         <section class="mentors">
             <div class="container">
-                <h2 class="section__title"></h2>
-                <p class="section__text"></p>
+                <h2 class="section__title">Наставники и организаторы</h2>
+                <p class="section__text">Наши наставники, это опытные туристы и позитивные люди - они помогут тебе на
+                    пути изучения туризма, поддержат в сложном деле и развлекут в скучные времена</p>
                 <div class="mentors-card">
                     <div class="mentors-card__item">
-                        <img src="" alt="">
-                        <div class="title"></div>
-                        <div class="text"></div>
+                        <img src="img/mentors/ment-1.jpg" alt="image">
+                        <div class="title">Подгайский
+                            Егор</div>
+                        <div class="text">Руководитель
+                            движухи</div>
                     </div>
                     <div class="mentors-card__item">
-                        <img src="" alt="">
-                        <div class="title"></div>
-                        <div class="text"></div>
+                        <img src="img/mentors/ment-2.jpg" alt="image">
+                        <div class="title">Сенькин
+                            Артем</div>
+                        <div class="text">Главный
+                            по снаряге</div>
                     </div>
                     <div class="mentors-card__item">
-                        <img src="" alt="">
-                        <div class="title"></div>
-                        <div class="text"></div>
+                        <img src="img/mentors/ment-3.jpg" alt="image">
+                        <div class="title">Подгайская
+                            Серафима</div>
+                        <div class="text">Куратор
+                            движух</div>
                     </div>
                     <div class="mentors-card__item">
-                        <img src="" alt="">
-                        <div class="title"></div>
-                        <div class="text"></div>
+                        <img src="img/mentors/ment-4.jpg" alt="image">
+                        <div class="title">Джапаридзе Анна</div>
+                        <div class="text">Идейный
+                            вдохновитель</div>
                     </div>
                     <div class="mentors-card__item">
-                        <img src="" alt="">
-                        <div class="title"></div>
-                        <div class="text"></div>
+                        <img src="img/mentors/ment-5.jpg" alt="image">
+                        <div class="title">Костя
+                            Назаров </div>
+                        <div class="text">Главный
+                            ориентировщик</div>
                     </div>
                     <div class="mentors-card__item">
-                        <img src="" alt="">
-                        <div class="title"></div>
-                        <div class="text"></div>
+                        <img src="img/mentors/ment-6.jpg" alt="image">
+                        <div class="title">Михайленко
+                            Сергей</div>
+                        <div class="text">Фотоманьяк и не только</div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="news">
             <div class="container">
-                <h2 class="section__title"></h2>
-                <p class="section__text"></p>
+                <h2 class="section__title">Следите за новостями</h2>
+                <p class="section__text">Вы уже сейчас можете подисаться на наши новости и не пропустить ни одного
+                    интересного мероприятия. Также Вы можете зарегестрироваться в нашей туриаде и мы будет приглашать
+                    вас на каждое мероприятие. Мы не присылаем спам, не пишем чаще чем раз в неделю</p>
                 <form action="" class="news__form">
                     <input type="text" class="input">
                     <input type="text" class="input">
-                    <button class="form__button"></button>
+                    <button class="form__button">Подписаться</button>
                 </form>
             </div>
         </section>
+        <section class="bonus">
+            <div class="container">
+                <h2 class="section__title">Бонусы и подарки участникам</h2>
+                <p class="section__text">В течении всего года вы можете накапливать бонусы за участие в различных
+                    туристических мероприятиях. При наборе определенного количества бонусов вы получаете новый уровень.
+                    ЗА каждый новый уровень вы можете получить специальные бонусы и подарки</p>
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="img/bonus/bonus-img_1.png" alt=""></div>
+                            <div class="swiper-slide__title">Фирменный значок</div>
+                            <div class="swiper-slide__text">За 50 баллов
+                                и звание:
+                                “🐰 Кунг-фу кролик”</div>
+                        <div class="swiper-slide">
+                            <img src="img/bonus/bonus-img_2.png" alt=""></div>
+                            <div class="swiper-slide__title">Походная лампа</div>
+                            <div class="swiper-slide__text">За 80 баллов
+                                и статус:
+                                🦊 "Хитрый лис"</div>
+                        <div class="swiper-slide">
+                            <img src="img/bonus/bonus-img_3.png" alt=""></div>
+                            <div class="swiper-slide__title">Стильная футболка</div>
+                            <div class="swiper-slide__text">За 110 баллов
+                                и статус:
+                                🐼 "Сосредоточенная панда"</div>
+                        <div class="swiper-slide">
+                            <img src="img/bonus/bonus-img_4.png" alt=""></div>
+                            <div class="swiper-slide__title">Походная бандана</div>
+                            <div class="swiper-slide__text">За 150 баллов
+                                и статус:
+                                🐯 "Молниеносный тигр"</div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <section class="regis">
+            <div class="container">
+                <h2 class="section__title"></h2>
+                <p class="section__text"></p>
+                <button class="regis__button"></button>
+                <div class="regis__content"></div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <h2 class="footer__title"></h2>
+            <p class="footer__text"></p>
+            <div class="footer-content">
+                <div class="footer-content__item"></div>
+                <div class="footer-content__item"></div>
+                <div class="footer-content__item"></div>
+                <div class="footer-content__item"></div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
