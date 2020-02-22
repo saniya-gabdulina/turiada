@@ -1,0 +1,15 @@
+*, *:before, *:after {
+    box-sizing: border-box
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1030px;
+    padding: 0 15px;
+}
+.row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
