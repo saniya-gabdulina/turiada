@@ -1,0 +1,63 @@
+.header {
+    display: block;
+    top: 0;
+    margin-bottom: -136px;
+    .container {
+        padding: 24px 0;
+    }
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+        .social {
+            display: flex;
+            align-items: center;
+            margin-right: 23px;
+            font-family: Ubuntu-Regular, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            a {
+                text-decoration: none;
+                cursor: pointer;
+
+            }
+            &-vk {
+                position: relative;
+                padding-right: 13px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background: url('../img/header/vk.svg') no-repeat center;
+                    width: 100%;
+                    max-width: 30px;
+                    height: 16.67px;
+                    left: -37px;
+                }
+                a {
+                    color: #436EAB;
+                }
+            }
+            &-telegram {
+                position: relative;
+                background: #039BE5;
+                border-radius: 20px;
+                width: 193px;
+                height: 40px;
+                text-align: center;
+                padding-top: 14px;
+                padding-left: 31px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background: url('../img/header/telegram.svg');
+                    width: 19px;
+                    height: 15.69px;
+                    left: 25px;
+                }
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

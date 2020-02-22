@@ -1,10 +1,24 @@
 *, *:before, *:after {
     box-sizing: border-box
 }
+body {
+    background-color: #EEF5FA;
+    font-family: Ubuntu-Medium, sans-serif;
+}
+.section {
+    width: 100%;
+    padding: 60px 0;
+    &__title {
+        font-size: 42px;
+        font-family: Montserrat-Bold, sans-serif;
+        color: #333333;
+    }
+}
+    
 .container {
     margin: 0 auto;
     width: 100%;
-    max-width: 1030px;
+    max-width: 1211px;
     padding: 0 15px;
 }
 .row {

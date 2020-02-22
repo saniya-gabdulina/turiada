@@ -1,0 +1,20 @@
+.descrip {
+    &-card{
+        display: flex;
+        justify-content: space-between;
+        
+        &__item {
+            width: 100%;
+            max-width: 270px;
+            height: 270px;
+            margin: 0 auto;
+            padding: 24px 23px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 10px 30px rgba(149, 192, 255, 0.2);
+            p {
+                font-size: 22px;
+            }
+        }
+    }
+}
