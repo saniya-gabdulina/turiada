@@ -1,0 +1,84 @@
+.direc {
+   
+    margin-top: 106px;
+    .section__title{
+        position: relative;
+        &::after {
+            display: block;
+            position: absolute;
+            content: '';
+            background: url('../img/direc/direc-img.png');
+            width: 100%;
+            max-width: 1237px;
+            height: 122px;
+            left: -91px;
+            top: 61px;
+        }
+    }
+    &-card {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 117px;
+        &__item {
+            width: 100%;
+            max-width: 250px;
+            height: 164px;
+            &:nth-child(even) {
+                margin-top: 30px;
+            }
+            .title {
+                position: relative;
+                font-size: 60px;
+                color: #333333;
+                font-family: Montserrat-Bold, serif;
+                &::before {
+                    display: inline-block;
+                    position: absolute;
+                    content: '';
+                    border-radius: 50%;
+                    vertical-align: middle;
+                    background: #FFFFFF;
+                    border: 5px solid #FFD200;
+                    width: 100%;
+                    max-width: 47px;
+                    height: 47px;
+                    top: -76px;
+                }
+                &::after {
+                    display: block;
+                    position: absolute;
+                    content: '';
+                    border-radius: 50%;
+                    background: #FFD200;
+                    width: 100%;
+                    max-width: 17px;
+                    height: 17px;
+                    top: -62px;
+                    left: 15px; 
+                }
+            }
+            .text {
+                text-align: left;
+                margin-top: 18px;
+                font-size: 22px;
+                color: #181818;
+                font-family: Ubuntu-Medium, serif;
+            }
+        }
+    }
+    .button {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 16px;
+        color: #181818;
+        background: #FFD200;
+        border-radius: 29.5px;
+        outline: none;
+        width: 100%;
+        max-width: 246px;
+        height: 59px;
+        margin-top: 9px;
+        cursor: pointer;
+        border: none;
+    }
+}

@@ -21,16 +21,18 @@
     }
     .button {
         text-transform: uppercase;
+        font-weight: bold;
         font-size: 16px;
         color: #181818;
         background: #FFD200;
         border-radius: 29.5px;
-        
+        outline: none;
         width: 100%;
         max-width: 246px;
         height: 59px;
         margin-top: 45px;
         margin-left: 7px;
         cursor: pointer;
+        border: none;
     }
 }
