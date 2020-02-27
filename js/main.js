@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.fancybox').fancybox();
+
 
     //initialize swiper when document ready
     var mySwiper = new Swiper('.swiper-container', {

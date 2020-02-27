@@ -599,3 +599,54 @@ template {
       margin-top: 9px;
       cursor: pointer;
       border: none; }
+
+.skills {
+  margin-top: 129px; }
+  .skills .section__title {
+    margin-bottom: 37px; }
+  .skills .swiper-wrapper {
+    display: -webkit-box;
+    display: flex; }
+    .skills .swiper-wrapper .swiper-slide {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+      margin: auto;
+      width: 100%;
+      max-width: 261px;
+      height: 300px; }
+      .skills .swiper-wrapper .swiper-slide__img {
+        height: 100%;
+        max-height: 110px;
+        margin-bottom: 20px; }
+      .skills .swiper-wrapper .swiper-slide__title {
+        font-size: 22px;
+        color: #181818;
+        margin-top: 10px; }
+      .skills .swiper-wrapper .swiper-slide__text {
+        font-size: 16px;
+        color: #4C4C4C;
+        margin-top: 19px; }
+
+.mentors .section__title {
+  margin-bottom: 20px; }
+
+.mentors .section__text {
+  font-size: 16px;
+  color: #4C4C4C;
+  width: 100%;
+  max-width: 470px;
+  margin-top: -7px;
+  margin-bottom: 42px; }
+
+.mentors-card {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between; }
+  .mentors-card .title {
+    font-size: 22px;
+    color: #181818; }
+  .mentors-card .text {
+    font-size: 16px;
+    color: #4C4C4C; }

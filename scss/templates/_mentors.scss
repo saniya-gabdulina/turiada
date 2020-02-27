@@ -1,0 +1,27 @@
+.mentors {
+    .section {
+        &__title {
+            margin-bottom: 20px;
+        }
+        &__text {
+            font-size: 16px;
+            color: #4C4C4C;
+            width: 100%;
+            max-width: 470px;
+            margin-top: -7px;
+            margin-bottom: 42px;
+        }
+    }
+    &-card {
+        display: flex;
+        justify-content: space-between;
+        .title {
+            font-size: 22px;
+            color: #181818;
+        }
+        .text {
+            font-size: 16px;
+            color: #4C4C4C;
+        }
+    }
+}
