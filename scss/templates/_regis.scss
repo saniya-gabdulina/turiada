@@ -1,0 +1,89 @@
+.regis {
+    display: block;
+    margin-bottom: 158px;
+
+    &-card {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        &:before{
+            position: absolute;
+            display: block;
+            content: '';
+            background: url(../img/regis/regis-vector__img.png) no-repeat;
+            width: 1072px;
+            height: 331px;
+            top: -192px;
+            right: 90px;
+        }
+        &__item {
+            position: relative;
+            margin-top: 151px;
+            height: 38px;
+            width: 100%;
+            max-width: 198px;
+            color: #4C4C4C;
+            &:nth-child(2) {
+                bottom: 20px;
+                left: 8px;
+            }
+            &:nth-child(3) {
+                bottom: 51px;
+                left: 37px;
+            }
+            &:nth-child(4) {
+                bottom: 107px;
+                left: 33px;
+            }
+            &:nth-child(5) {
+                bottom: 175px;
+                left: 38px;
+            }
+            &:nth-child(6) {
+                bottom: 273px;
+                left: 19px;
+            }
+            &::before {
+                display: inline-block;
+                position: absolute;
+                content: '';
+                border-radius: 50%;
+                vertical-align: middle;
+                background: #FFFFFF;
+                border: 5px solid #FFD200;
+                width: 100%;
+                max-width: 47px;
+                height: 47px;
+                top: -61px;
+            }
+            &::after {
+                display: block;
+                position: absolute;
+                content: '';
+                border-radius: 50%;
+                background: #FFD200;
+                width: 100%;
+                max-width: 17px;
+                height: 17px;
+                top: -46px;
+                left: 15px; 
+            }
+
+        }
+    } 
+    .button {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 16px;
+        color: #181818;
+        background: #FFD200;
+        border-radius: 29.5px;
+        outline: none;
+        width: 100%;
+        max-width: 272px;
+        height: 59px;
+        cursor: pointer;
+        border: none;
+    
+    }
+}

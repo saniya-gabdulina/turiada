@@ -1,0 +1,42 @@
+.news {
+    background: url(../img/news/news__bg.png) no-repeat;
+    height: 687px;
+    background-position: calc(28% - -50%) 24%;
+    margin-top: 100px;
+    .section {
+        &__title {
+            margin-bottom: 25px;
+        }
+        &__text {
+            margin-top: 33px;
+        }
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 361px;
+    }
+    input {
+        border: 3px solid #B1D3FD;
+        border-radius: 29.5px;
+        height: 59px;
+        margin-bottom: 12px;
+        outline: none;
+    }
+    .button {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 16px;
+        color: #181818;
+        background: #FFD200;
+        border-radius: 29.5px;
+        outline: none;
+        width: 100%;
+        max-width: 216px;
+        height: 59px;
+        cursor: pointer;
+        border: none;
+    }
+   
+}
