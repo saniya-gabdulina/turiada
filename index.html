@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Turiada</title>
 </head>
@@ -65,9 +66,6 @@
         <section class="direc">
             <div class="container">
                 <h2 class="section__title">Как стать участником</h2>
-                <!-- <div class="direct__img">
-                    <img src="../img/direc/direc-img.png" alt="">
-                </div> -->
                 <div class="direc-card">
                     <div class="direc-card__item">
                         <div class="title">01</div>
@@ -129,52 +127,71 @@
         <section class="skills">
             <div class="container">
                 <h2 class="section__title">Участвуй и прокачивай <br>свои навыки 💪🏻</h2>
-                <!-- Slider main container -->
-                <div class="swiper-container" id="skills-slider">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="swiper-slide__img">
+
+                <div class="skills-slide">
+                    <div>
+                        <div class="slide-card">
+                            <div class="skills-slide__img">
                                 <img src="img/skills/skills__img-1.png" alt="">
                             </div>
-                            <div class="swiper-slide__title">Работай с веревками в лесу и на скалах</div>
-                            <div class="swiper-slide__text">Вяжем узлы, лазаем по скалам, разбираем снаряжение и
-                                тонкости горных походов</div>
+                            <div class="skills-slide__title">Работай с веревками в лесу и на скалах</div>
+                            <div class="skills-slide__text">Вяжем узлы, лазаем по скалам, разбираем снаряжение и тонкости горных походов</div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="swiper-slide__img">
+                        
+                    </div>
+                    <div>
+                        <div class="slide-card">
+                            <div class="skills-slide__img">
                                 <img src="img/skills/skills__img-2.png" alt="">
                             </div>
-                            <div class="swiper-slide__title">Управляй байдаркой, рафтом и катамараном</div>
-                            <div class="swiper-slide__text">Что такое сплавное снаряжение и как его использовать. Куда
+                            <div class="skills-slide__title">Управляй байдаркой, рафтом и катамараном</div>
+                            <div class="skills-slide__text">Что такое сплавное снаряжение и как его использовать. Куда
                                 можно отправиться сплавляться и как не теряться на реке </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="swiper-slide__img">
+                        
+                    </div>
+                    <div>
+                        <div class="slide-card">
+                            <div class="skills-slide__img">
                                 <img src="img/skills/skills__img-3.png" alt="">
                             </div>
-                            <div class="swiper-slide__title">Знакомся с походами на велосипедах</div>
-                            <div class="swiper-slide__text">Как выбрать и настроить велосипед, как подготовить его к
+                            <div class="skills-slide__title">Знакомся с походами на велосипедах</div>
+                            <div class="skills-slide__text">Как выбрать и настроить велосипед, как подготовить его к
                                 сезону или походу</div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="swiper-slide__img">
+                        
+                    </div>
+                    <div>
+                        <div class="slide-card">
+                            <div class="skills-slide__img">
                                 <img src="img/skills/skills__img-4.png" alt="">
                             </div>
-                            <div class="swiper-slide__title">Умей работать
+                            <div class="skills-slide__title">Умей работать
                                 с электроникой</div>
-                            <div class="swiper-slide__text">Как использовать навигатор, телефон, камеру в лесу с
+                            <div class="skills-slide__text">Как использовать навигатор, телефон, камеру в лесу с
                                 пользой? Как заряжать и обслуживать технику</div>
                         </div>
+                       
                     </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
+                    <div>
+                        <div class="slide-card">
+                            <div class="skills-slide__img">
+                                <img src="img/skills/skills__img-1.png" alt="">
+                            </div>
+                            <div class="skills-slide__title">Работай с веревками в лесу и на скалах</div>
+                            <div class="skills-slide__text">Вяжем узлы, лазаем по скалам, разбираем снаряжение и тонкости горных походов</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide-card">
+                            <div class="skills-slide__img">
+                                <img src="img/skills/skills__img-2.png" alt="">
+                            </div>
+                            <div class="skills-slide__title">Управляй байдаркой, рафтом и катамараном</div>
+                            <div class="skills-slide__text">Что такое сплавное снаряжение и как его использовать. Куда
+                                можно отправиться сплавляться и как не теряться на реке </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -234,8 +251,8 @@
                     интересного мероприятия. Также Вы можете зарегестрироваться в нашей туриаде и мы будет приглашать
                     вас на каждое мероприятие.Мы не присылаем спам, не пишем чаще чем раз в неделю</p>
                 <form action="" class="news__form">
-                    <input type="text" class="input">
-                    <input type="text" class="input">
+                    <input type="text" name="userName" class="news__form-input" placeholder="Имя и Фамилия">
+                    <input type="text" name="userEmail" class="news__form-input" placeholder="Email">
                     <button class="button">Подписаться</button>
                 </form>
             </div>
@@ -246,40 +263,61 @@
                 <p class="section__text">В течении всего года вы можете накапливать бонусы за участие в различных
                     туристических мероприятиях. При наборе определенного количества бонусов вы получаете новый уровень.
                     ЗА каждый новый уровень вы можете получить специальные бонусы и подарки</p>
-                <!-- Slider main container -->
-                <div class="swiper-container">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper" id="bonus-slide">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="img/bonus/bonus-img_1.png" alt="">
-                            <div class="swiper-slide__title">Фирменный значок</div>
-                            <div class="swiper-slide__text">За 50 баллов и звание: “🐰 Кунг-фу кролик”</div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/bonus/bonus-img_2.png" alt="">
-                            <div class="swiper-slide__title">Походная лампа</div>
-                            <div class="swiper-slide__text">За 80 баллов и статус: 🦊 "Хитрый лис"</div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/bonus/bonus-img_3.png" alt="">
-                            <div class="swiper-slide__title">Стильная футболка</div>
-                            <div class="swiper-slide__text">За 110 баллов и статус: 🐼 "Сосредоточенная панда"</div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/bonus/bonus-img_4.png" alt="">
-                            <div class="swiper-slide__title">Походная бандана</div>
-                            <div class="swiper-slide__text">За 150 баллов
-                            и статус:
-                            🐯 "Молниеносный тигр"</div>
+                <div class="bonus-slide">
+                    <div>
+                        <div class="bonus-card">
+                            <div class="bonus-slide__img">
+                                <img src="../img/bonus/bonus-img_1.png" alt="">
+                            </div>
+                            <div class="bonus-slide__title">Фирменный значок</div>
+                            <div class="bonus-slide__text">За 50 баллов и звание: “🐰 Кунг-фу кролик”</div>
                         </div>
                     </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div>
+                        <div class="bonus-card">
+                            <div class="bonus-slide__img">
+                                <img src="../img/bonus/bonus-img_2.jpg" alt="">
+                            </div>
+                            <div class="bonus-slide__title">Походная лампа</div>
+                            <div class="bonus-slide__text">За 80 баллов и статус: 🦊 "Хитрый лис"</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bonus-card">
+                            <div class="bonus-slide__img">
+                                <img src="../img/bonus/bonus-img_3.jpg" alt="">
+                            </div>
+                            <div class="bonus-slide__title">Стильная футболка</div>
+                            <div class="bonus-slide__text">За 110 баллов и статус: 🐼 "Сосредоточенная панда"</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bonus-card">
+                            <div class="bonus-slide__img">
+                                <img src="../img/bonus/bonus-img_4.png" alt="">
+                            </div>
+                            <div class="bonus-slide__title">Походная бандана</div>
+                            <div class="bonus-slide__text">За 150 баллов и статус:🐯 "Молниеносный тигр"</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bonus-card">
+                            <div class="bonus-slide__img">
+                                <img src="../img/bonus/bonus-img_1.png" alt="">
+                            </div>
+                            <div class="bonus-slide__title">Фирменный значок</div>
+                            <div class="bonus-slide__text">За 50 баллов и звание: “🐰 Кунг-фу кролик”</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bonus-card">
+                            <div class="bonus-slide__img">
+                                <img src="../img/bonus/bonus-img_2.jpg" alt="">
+                            </div>
+                            <div class="bonus-slide__title">Походная лампа</div>
+                            <div class="bonus-slide__text">За 80 баллов и статус: 🦊 "Хитрый лис"</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -322,7 +360,7 @@
                         <div class="img">
                             <img src="../img/footer/footer-img-1.png" alt="">
                         </div>
-                        <div class="text">КРОО “Федерация спортивного
+                        <div class="text">КРОО <br>“Федерация спортивного
                             туризма Карелии”
                         </div>
                     </div>
@@ -337,26 +375,28 @@
                 </div>
                 <div class="footer-content__item">
                     <div class="title">Партнеры</div>
-                    <div class="card">
-                        <div class="img">
-                            <img src="../img/footer/footer-img-3.png" alt="">
+                    <div class="card-row">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../img/footer/footer-img-3.png" alt="">
+                            </div>
+                            <div class="text">Турклуб <br>”Сампо”</div>
                         </div>
-                        <div class="text">Турклуб”Сампо”</div>
-                    </div>
-                </div>
-                <div class="footer-content__item">
-                    <div class="card">
-                        <div class="img">
-                            <img src="../img/footer/footer-img-4.png" alt="">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../img/footer/footer-img-4.png" alt="">
+                            </div>
+                            <div class="text">Петрозаводский государственный университет</div>
                         </div>
-                        <div class="text">Петрозаводский государственный университет</div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script  src="js/jquery-1.11.0.min.js"></script>
+    <script  src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script  src="js/slick.min.js"></script>
+    <!-- <script src="js/jquery-3.4.1.min.js"></script> -->
     <script src="js/main.js"></script>
 </body>
 

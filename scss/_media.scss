@@ -1,0 +1,78 @@
+@media only screen and (max-width : 1352px) {
+    .descrip {
+        &-card {
+            flex-wrap: wrap;
+            &__item {
+                width: 100%;
+                max-width: 230px;
+                height: 230px;
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .direc {
+        .section__title {
+            &::after {
+                width: 100%;
+                max-width: 1137px;
+            }
+        }
+        &-card {
+            &__item {
+                width: 100%;
+                max-width: 220px;
+                .title {
+                    font-size: 56px;
+                }
+                .text {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .program {
+        &-card {
+            justify-content: center;
+            &__item {
+                margin-right: 20px;
+            }
+        }
+    }
+    .skills {
+
+    }
+    .mentors {
+        &-card {
+            flex-wrap: wrap;
+        }
+    }
+}
+@media only screen and (max-width : 991px) {
+    .descrip {
+        &-card {
+            width: 100%;
+            max-width: 780px;
+            margin: auto;
+            &__item {
+                width: 100%;
+                max-width: 270px;
+                height: 270px;
+                margin-top: 15px;
+                p {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width : 768px) {
+
+}
+@media only screen and (max-width : 480px) {
+
+}
+@media only screen and (max-width : 320px) {
+
+}

@@ -1,14 +1,15 @@
 .news {
     background: url(../img/news/news__bg.png) no-repeat;
     height: 687px;
-    background-position: calc(28% - -50%) 24%;
-    margin-top: 100px;
+    background-position: calc(50% - -50%)  28%;
     .section {
         &__title {
+            padding-top: 108px;       
             margin-bottom: 25px;
         }
         &__text {
             margin-top: 33px;
+            margin-bottom: 29px;
         }
     }
     &__form {
@@ -23,7 +24,9 @@
         height: 59px;
         margin-bottom: 12px;
         outline: none;
+        padding-left: 26px;
     }
+   
     .button {
         text-transform: uppercase;
         font-weight: bold;

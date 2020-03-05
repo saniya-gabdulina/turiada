@@ -1,0 +1,80 @@
+.bonus {
+    &-card {
+        display: block;
+        width: 100%;
+        max-width: 270px;
+        height: 365px;
+        background: #fff;
+        padding: 17px 50px 34px;
+        box-shadow: 0px 10px 30px rgba(149, 192, 255, 0.2);
+        border-radius: 8px;
+    }
+    &-slide {
+        text-align: center;
+        &__img {
+            height: 170px;
+            margin-bottom: 12px;
+        }
+        &__title {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        &__text {
+            font-size: 16px;
+            color: #4C4C4C;
+        }
+    }
+    .slick {
+        &-prev {
+            &::before {
+                position: absolute;
+                display: block;
+                content: '';
+                width: 12px;
+                height: 20px;
+                background: url(../img/skills/btn__left.png) no-repeat;
+                z-index: 99;
+                top: -4px;
+                right: 46px;
+            }
+            &::after {
+                position: absolute;
+                display: block;
+                content: '';
+                background-color: #B2CFF5;
+                border-radius: 50%;
+                width: 56px;
+                height: 56px;
+                right: 22px;
+                top: -23px;
+            }
+                
+        }
+    
+        &-next {
+            &::before {
+                position: absolute;
+                display: block;
+                content: '';
+                width: 56px;
+                height: 56px;
+                background: url(../img/skills/btn__right.png) no-repeat;
+                z-index: 99;
+                top: -4px;
+                left: 23px;
+            }
+            &::after {
+                position: absolute;
+                display: block;
+                content: '';
+                background-color: #B2CFF5;
+                border-radius: 50%;
+                width: 56px;
+                height: 56px;
+                left: -2px;
+                top: -23px
+            }
+        }
+    }
+  
+}
