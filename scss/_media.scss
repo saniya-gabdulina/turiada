@@ -41,11 +41,32 @@
         }
     }
     .skills {
+        .slick {
+            &-prev {
+                left: -65px;
+            }
+            &-next {
+                right: 56px;
+            }
+        }
 
     }
     .mentors {
         &-card {
             flex-wrap: wrap;
+        }
+    }
+    .news {
+
+    }
+    .bonus {
+        .slick {
+            &-prev {
+                left: -73px;
+            }
+            &-next {
+                right: 49px;
+            }
         }
     }
 }

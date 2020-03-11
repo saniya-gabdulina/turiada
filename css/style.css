@@ -12,7 +12,7 @@ body {
     font-size: 42px;
     font-family: Montserrat-Bold, sans-serif;
     color: #333333;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     margin-top: 100px; }
   .section__text {
     font-size: 16px;
@@ -613,15 +613,18 @@ template {
       border: none; }
 
 .skills {
+  display: block;
   position: relative;
   margin-top: 129px; }
   .skills .section__title {
-    margin-bottom: 37px; }
+    margin-bottom: -19px; }
   .skills-slide {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
-    margin: auto;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 0 auto;
     height: 300px; }
     .skills-slide__img {
       height: 110px;
@@ -633,50 +636,52 @@ template {
     .skills-slide__text {
       font-size: 16px;
       color: #4C4C4C;
-      margin-top: 19px; }
+      margin-top: 19px;
+      width: 100%;
+      max-width: 264px; }
   .skills .slide-card {
     width: 100%;
     max-width: 270px; }
-  .skills .slick-prev::before {
-    position: absolute;
-    display: block;
-    content: '';
-    width: 12px;
-    height: 20px;
-    background: url(../img/skills/btn__left.png) no-repeat;
-    z-index: 99;
-    top: -24px;
-    right: 60px; }
-  .skills .slick-prev::after {
-    position: absolute;
+  .skills .slick-prev {
+    position: relative;
     display: block;
     content: '';
     background-color: #B2CFF5;
     border-radius: 50%;
     width: 56px;
     height: 56px;
-    right: 36px;
-    top: -43px; }
-  .skills .slick-next::before {
-    position: absolute;
-    display: block;
-    content: '';
-    width: 56px;
-    height: 56px;
-    background: url(../img/skills/btn__right.png) no-repeat;
-    z-index: 99;
-    top: -24px;
-    left: 9px; }
-  .skills .slick-next::after {
-    position: absolute;
+    left: -98px;
+    top: 178px; }
+    .skills .slick-prev::before {
+      position: absolute;
+      display: block;
+      content: '';
+      font-size: 0;
+      width: 12px;
+      height: 20px;
+      background: url(../img/skills/btn__left.png) no-repeat;
+      z-index: 99;
+      top: 18px;
+      left: 19px; }
+  .skills .slick-next {
     display: block;
     content: '';
     background-color: #B2CFF5;
     border-radius: 50%;
     width: 56px;
     height: 56px;
-    left: -16px;
-    top: -43px; }
+    top: 178px;
+    right: -44px; }
+    .skills .slick-next::before {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 12px;
+      height: 20px;
+      background: url(../img/skills/btn__right.png) no-repeat;
+      z-index: 99;
+      top: 19px;
+      left: 25px; }
 
 .mentors .section__text {
   font-size: 16px;
@@ -742,6 +747,11 @@ template {
     cursor: pointer;
     border: none; }
 
+.bonus .section__text {
+  width: 100%;
+  max-width: 651px;
+  margin-bottom: -14px; }
+
 .bonus-card {
   display: block;
   width: 100%;
@@ -764,49 +774,45 @@ template {
     font-size: 16px;
     color: #4C4C4C; }
 
-.bonus .slick-prev::before {
-  position: absolute;
+.bonus .slick-prev {
+  position: relative;
   display: block;
-  content: '';
-  width: 12px;
-  height: 20px;
-  background: url(../img/skills/btn__left.png) no-repeat;
-  z-index: 99;
-  top: -4px;
-  right: 46px; }
+  background-color: #B2CFF5;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  left: -75px;
+  bottom: -232px; }
+  .bonus .slick-prev::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 12px;
+    height: 20px;
+    background: url(../img/skills/btn__left.png) no-repeat;
+    z-index: 99;
+    top: 17px;
+    right: 25px; }
 
-.bonus .slick-prev::after {
-  position: absolute;
+.bonus .slick-next {
   display: block;
   content: '';
   background-color: #B2CFF5;
   border-radius: 50%;
   width: 56px;
   height: 56px;
-  right: 22px;
-  top: -23px; }
-
-.bonus .slick-next::before {
-  position: absolute;
-  display: block;
-  content: '';
-  width: 56px;
-  height: 56px;
-  background: url(../img/skills/btn__right.png) no-repeat;
-  z-index: 99;
-  top: -4px;
-  left: 23px; }
-
-.bonus .slick-next::after {
-  position: absolute;
-  display: block;
-  content: '';
-  background-color: #B2CFF5;
-  border-radius: 50%;
-  width: 56px;
-  height: 56px;
-  left: -2px;
-  top: -23px; }
+  top: 232px;
+  right: -67px; }
+  .bonus .slick-next::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 12px;
+    height: 20px;
+    background: url(../img/skills/btn__right.png) no-repeat;
+    z-index: 99;
+    top: 18px;
+    right: 19px; }
 
 .regis {
   display: block;
@@ -958,8 +964,16 @@ template {
     justify-content: center; }
     .program-card__item {
       margin-right: 20px; }
+  .skills .slick-prev {
+    left: -65px; }
+  .skills .slick-next {
+    right: 56px; }
   .mentors-card {
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .bonus .slick-prev {
+    left: -73px; }
+  .bonus .slick-next {
+    right: 49px; } }
 
 @media only screen and (max-width: 991px) {
   .descrip-card {

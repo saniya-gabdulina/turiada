@@ -1,13 +1,15 @@
 .skills {
+    display: block;
     position: relative;
     margin-top: 129px;
     .section__title {
-        margin-bottom: 37px;
+        margin-bottom: -19px;
     }
      
     &-slide {
         flex-direction: column;
-        margin: auto;
+        justify-content: center;
+        margin: 0 auto;
         height: 300px;
        
         &__img {
@@ -24,6 +26,8 @@
             font-size: 16px;
             color: #4C4C4C;
             margin-top: 19px;
+            width: 100%;
+            max-width: 264px;
         }
     }
     .slide {
@@ -34,54 +38,53 @@
     }
     .slick {
         &-prev {
+            position: relative;
+            display: block;
+            content: '';
+            background-color: #B2CFF5;
+            border-radius: 50%;
+            width: 56px;
+            height: 56px;
+            left: -98px;
+            top: 178px;
+            &::before {
+                position: absolute;
+                display: block;
+                content: '';
+                font-size: 0;
+                width: 12px;
+                height: 20px;
+                background: url(../img/skills/btn__left.png) no-repeat;
+                z-index: 99;
+                top: 18px;
+                left: 19px;
+                
+            }
+           
+          
+                
+        }
+    
+        &-next {
+            display: block;
+            content: '';
+            background-color: #B2CFF5;
+            border-radius: 50%;
+            width: 56px;
+            height: 56px;
+            top: 178px;
+            right: -44px;
             &::before {
                 position: absolute;
                 display: block;
                 content: '';
                 width: 12px;
                 height: 20px;
-                background: url(../img/skills/btn__left.png) no-repeat;
-                z-index: 99;
-                top: -24px;
-                right: 60px;
-            }
-            &::after {
-                position: absolute;
-                display: block;
-                content: '';
-                background-color: #B2CFF5;
-                border-radius: 50%;
-                width: 56px;
-                height: 56px;
-                right: 36px;
-                top: -43px;
-            }
-            
-                
-        }
-    
-        &-next {
-            &::before {
-                position: absolute;
-                display: block;
-                content: '';
-                width: 56px;
-                height: 56px;
                 background: url(../img/skills/btn__right.png) no-repeat;
                 z-index: 99;
-                top: -24px;
-                left: 9px;
-            }
-            &::after {
-                position: absolute;
-                display: block;
-                content: '';
-                background-color: #B2CFF5;
-                border-radius: 50%;
-                width: 56px;
-                height: 56px;
-                left: -16px;
-                top: -43px;
+                top: 19px;
+                left: 25px;
+            
             }
         }
     }
