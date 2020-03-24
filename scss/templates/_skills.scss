@@ -5,12 +5,12 @@
     .section__title {
         margin-bottom: -19px;
     }
-     
     &-slide {
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
         height: 300px;
+        width: calc(100% - 30px);
        
         &__img {
             
@@ -31,12 +31,16 @@
         }
     }
     .slide {
+        align-items: center;
         &-card {
             width: 100%;
             max-width: 270px;
         }
     }
     .slick {
+        &-list {
+            margin: 0 auto;
+        }
         &-prev {
             position: relative;
             display: block;

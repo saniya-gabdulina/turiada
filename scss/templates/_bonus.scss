@@ -4,10 +4,13 @@
         max-width: 651px;
         margin-bottom: -14px;
     }
+    
     &-card {
         display: block;
-        width: 100%;
-        max-width: 270px;
+        margin: 0 auto;
+        // width: 100%;
+        // max-width: 270px;
+        width: calc(100% - 30px);
         height: 365px;
         background: #fff;
         padding: 17px 50px 34px;
@@ -30,6 +33,10 @@
         }
     }
     .slick {
+        &-list {
+            margin: 0 auto;
+            
+        }
         &-prev {
             position: relative;
             display: block;
@@ -39,6 +46,7 @@
             height: 56px;
             left: -75px;
             bottom: -232px;
+            z-index: 99;
             &::before {
                 position: absolute;
                 display: block;
@@ -46,7 +54,7 @@
                 width: 12px;
                 height: 20px;
                 background: url(../img/skills/btn__left.png) no-repeat;
-                z-index: 99;
+                // z-index: 99;
                 top: 17px;
                 right: 25px;
             }

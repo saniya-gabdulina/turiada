@@ -41,12 +41,19 @@
         }
     }
     .skills {
+        &-card {
+           
+        }
         .slick {
+            &-list {
+                width: 100%;
+                max-width: 900px;
+            }
             &-prev {
-                left: -65px;
+                left: -5px;
             }
             &-next {
-                right: 56px;
+                right: 51px;
             }
         }
 
@@ -54,23 +61,59 @@
     .mentors {
         &-card {
             flex-wrap: wrap;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            .text {
+                margin-bottom: 20px;
+            }
         }
     }
     .news {
-
+       
     }
     .bonus {
         .slick {
+            &-list {
+                width: 100%;
+                max-width: 900px;
+            }
             &-prev {
-                left: -73px;
+                left: 9px;
             }
             &-next {
-                right: 49px;
+                right: 9px;
+            }
+        }
+    }
+}
+@media only screen and (max-width : 1080px) {
+    .direc {
+        .section__title {
+            &::after {
+                display: none;
             }
         }
     }
 }
 @media only screen and (max-width : 991px) {
+    .section {
+        &__title {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        &__text {
+            font-size: 18px;
+            margin: 30px auto;
+        }
+    }
+    .hero {
+       background-size: auto;
+       background-position: calc(46% + 20%) bottom;
+       &__title {
+           padding-top: 76px;
+       }
+    }
     .descrip {
         &-card {
             width: 100%;
@@ -87,13 +130,114 @@
             }
         }
     }
+    .direc {
+        &-card {
+            display: flex;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            &__item {
+                &:nth-child(even) {
+                    margin-top: 0;
+                }
+                .title {
+                    &::before {
+                        top: 7px;
+                        left: -70px;
+                    }
+                    &::after {
+                        top: 22px;
+                        left: -55px;
+                    }
+                }
+            }
+        }
+        .button {
+            margin-left: 20px;
+        }
+    }
+    .program {
+        .section__title {
+            margin-top: 40px;
+        }
+    }
+    .skills {
+        .section__title {
+            margin-bottom: 35px;
+        }
+        .slick {
+            &-dots li button:before {
+                font-size: 22px;
+            }
+            &-track {
+                margin-left: 20px;
+            }
+        }
+           
+    }
+    .mentors {
+        .container {
+            padding-top: 100px;
+            .section {
+                &__text {
+                    margin-top: 33px;
+                }
+            }
+        }
+    }
+    .news {
+        background-position: center bottom;
+        background-size: 800px auto;
+        padding-bottom: 600px;
+        
+        &__form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    }
+    .bonus {
+        .section__title {
+            margin-top: 0;
+        }
+        &-card {
+            width: calc(100% - 90px);
+            margin-top: 50px;
+        }
+    }
 }
 @media only screen and (max-width : 768px) {
-
+    .hero {
+        background: url('../img/bg_mobile.png') no-repeat center bottom;
+        background-size: 100% auto;
+        padding-bottom: 50%;
+    }
+    .section {
+        &__title {
+            font-size: 24px;
+        }
+    }
 }
 @media only screen and (max-width : 480px) {
-
+    .hero {
+        &__title {
+            // padding-top: ;
+        }
+    }
 }
 @media only screen and (max-width : 320px) {
-
+    .hero {
+        &__title {
+            line-height: 1;
+            font-size: 36px;
+            span {
+                font-size: 28px;
+            }
+        }
+        &__text {
+            margin-top: 0;
+            font-size: 14px;
+        }
+        
+    }
 }

@@ -19,12 +19,16 @@ $(document).ready(function(){
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 999,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 2
+              slidesToScroll: 1,
+              arrows: false,  
+              infinite: true,
+              dots: true,
             }
           },
+         
           {
             breakpoint: 480,
             settings: {
@@ -52,14 +56,17 @@ $(document).ready(function(){
               slidesToShow: 3,
               slidesToScroll: 1,
               infinite: true,
-              dots: false,
+              dots: true,
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 1000,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 2
+              slidesToScroll: 1,
+              arrows: false,  
+              infinite: true,
+              dots: true,
             }
           },
           {

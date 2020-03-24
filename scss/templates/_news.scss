@@ -1,7 +1,7 @@
 .news {
     background: url(../img/news/news__bg.png) no-repeat;
-    height: 687px;
-    background-position: calc(50% - -50%)  28%;
+    min-height: 687px;
+    background-position: calc(50% + 232px)  28%;
     .section {
         &__title {
             padding-top: 108px;       

@@ -364,7 +364,9 @@ template {
   font-style: normal; }
 
 .header {
+  position: relative;
   display: block;
+  z-index: 1;
   top: 0;
   margin-bottom: -136px; }
   .header .container {
@@ -420,8 +422,9 @@ template {
           color: #fff; }
 
 .hero {
-  height: 804.42px;
-  background: url("../img/hero.bg.png") no-repeat center/cover; }
+  position: relative;
+  min-height: 804.42px;
+  background: url("../img/hero.bg.png") no-repeat center bottom/cover; }
   .hero__title {
     padding-top: 213px;
     font-size: 72px;
@@ -625,7 +628,8 @@ template {
     -webkit-box-pack: center;
     justify-content: center;
     margin: 0 auto;
-    height: 300px; }
+    height: 300px;
+    width: calc(100% - 30px); }
     .skills-slide__img {
       height: 110px;
       margin-bottom: 20px; }
@@ -639,9 +643,14 @@ template {
       margin-top: 19px;
       width: 100%;
       max-width: 264px; }
-  .skills .slide-card {
-    width: 100%;
-    max-width: 270px; }
+  .skills .slide {
+    -webkit-box-align: center;
+    align-items: center; }
+    .skills .slide-card {
+      width: 100%;
+      max-width: 270px; }
+  .skills .slick-list {
+    margin: 0 auto; }
   .skills .slick-prev {
     position: relative;
     display: block;
@@ -710,8 +719,8 @@ template {
 
 .news {
   background: url(../img/news/news__bg.png) no-repeat;
-  height: 687px;
-  background-position: calc(50% - -50%) 28%; }
+  min-height: 687px;
+  background-position: calc(50% + 232px) 28%; }
   .news .section__title {
     padding-top: 108px;
     margin-bottom: 25px; }
@@ -754,8 +763,8 @@ template {
 
 .bonus-card {
   display: block;
-  width: 100%;
-  max-width: 270px;
+  margin: 0 auto;
+  width: calc(100% - 30px);
   height: 365px;
   background: #fff;
   padding: 17px 50px 34px;
@@ -774,6 +783,9 @@ template {
     font-size: 16px;
     color: #4C4C4C; }
 
+.bonus .slick-list {
+  margin: 0 auto; }
+
 .bonus .slick-prev {
   position: relative;
   display: block;
@@ -782,7 +794,8 @@ template {
   width: 56px;
   height: 56px;
   left: -75px;
-  bottom: -232px; }
+  bottom: -232px;
+  z-index: 99; }
   .bonus .slick-prev::before {
     position: absolute;
     display: block;
@@ -790,7 +803,6 @@ template {
     width: 12px;
     height: 20px;
     background: url(../img/skills/btn__left.png) no-repeat;
-    z-index: 99;
     top: 17px;
     right: 25px; }
 
@@ -964,18 +976,44 @@ template {
     justify-content: center; }
     .program-card__item {
       margin-right: 20px; }
+  .skills .slick-list {
+    width: 100%;
+    max-width: 900px; }
   .skills .slick-prev {
-    left: -65px; }
+    left: -5px; }
   .skills .slick-next {
-    right: 56px; }
+    right: 51px; }
   .mentors-card {
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; }
+    .mentors-card .text {
+      margin-bottom: 20px; }
+  .bonus .slick-list {
+    width: 100%;
+    max-width: 900px; }
   .bonus .slick-prev {
-    left: -73px; }
+    left: 9px; }
   .bonus .slick-next {
-    right: 49px; } }
+    right: 9px; } }
+
+@media only screen and (max-width: 1080px) {
+  .direc .section__title::after {
+    display: none; } }
 
 @media only screen and (max-width: 991px) {
+  .section__title {
+    max-width: 500px;
+    margin: 0 auto; }
+  .section__text {
+    font-size: 18px;
+    margin: 30px auto; }
+  .hero {
+    background-size: auto;
+    background-position: calc(46% + 20%) bottom; }
+    .hero__title {
+      padding-top: 76px; }
   .descrip-card {
     width: 100%;
     max-width: 780px;
@@ -986,4 +1024,63 @@ template {
       height: 270px;
       margin-top: 15px; }
       .descrip-card__item p {
-        font-size: 22px; } }
+        font-size: 22px; }
+  .direc-card {
+    display: -webkit-box;
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+    flex-wrap: wrap; }
+    .direc-card__item:nth-child(even) {
+      margin-top: 0; }
+    .direc-card__item .title::before {
+      top: 7px;
+      left: -70px; }
+    .direc-card__item .title::after {
+      top: 22px;
+      left: -55px; }
+  .direc .button {
+    margin-left: 20px; }
+  .program .section__title {
+    margin-top: 40px; }
+  .skills .section__title {
+    margin-bottom: 35px; }
+  .skills .slick-dots li button:before {
+    font-size: 22px; }
+  .skills .slick-track {
+    margin-left: 20px; }
+  .mentors .container {
+    padding-top: 100px; }
+    .mentors .container .section__text {
+      margin-top: 33px; }
+  .news {
+    background-position: center bottom;
+    background-size: 800px auto;
+    padding-bottom: 600px; }
+    .news__form {
+      max-width: 500px;
+      margin: 0 auto; }
+  .bonus .section__title {
+    margin-top: 0; }
+  .bonus-card {
+    width: calc(100% - 90px);
+    margin-top: 50px; } }
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    background: url("../img/bg_mobile.png") no-repeat center bottom;
+    background-size: 100% auto;
+    padding-bottom: 50%; }
+  .section__title {
+    font-size: 24px; } }
+
+@media only screen and (max-width: 320px) {
+  .hero__title {
+    line-height: 1;
+    font-size: 36px; }
+    .hero__title span {
+      font-size: 28px; }
+  .hero__text {
+    margin-top: 0;
+    font-size: 14px; } }
