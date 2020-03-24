@@ -3,16 +3,19 @@
     display: block;
     z-index: 1;
     top: 0;
-    margin-bottom: -136px;
+    margin-bottom: -188px;
     .container {
         padding: 24px 0;
     }
     &-nav {
         display: flex;
         justify-content: space-between;
+        .logo {
+            display: flex;
+        }
         .social {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             margin-right: 23px;
             font-family: Ubuntu-Regular, sans-serif;
             font-size: 12px;
@@ -24,8 +27,13 @@
 
             }
             &-vk {
+                display: flex;
                 position: relative;
+                color: #436EAB;
                 padding-right: 13px;
+                align-items: center;
+                width: 121px;
+                height: 40px;
                 &::before {
                     content: '';
                     position: absolute;
@@ -40,14 +48,16 @@
                 }
             }
             &-telegram {
+                display: flex;
                 position: relative;
                 background: #039BE5;
                 border-radius: 20px;
                 width: 193px;
                 height: 40px;
                 text-align: center;
-                padding-top: 14px;
-                padding-left: 31px;
+                // padding-top: 14px;
+                align-items: center;
+                padding-left: 55px;
                 &::before {
                     content: '';
                     position: absolute;
@@ -56,7 +66,7 @@
                     height: 15.69px;
                     left: 25px;
                 }
-                a {
+                span {
                     color: #fff;
                 }
             }

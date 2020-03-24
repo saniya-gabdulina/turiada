@@ -207,14 +207,55 @@
     }
 }
 @media only screen and (max-width : 768px) {
+    .header {
+        .social {
+            &-vk {
+            }
+        }
+    }
     .hero {
         background: url('../img/bg_mobile.png') no-repeat center bottom;
         background-size: 100% auto;
         padding-bottom: 50%;
+        &__title {
+            padding-top: 80px;
+            line-height: 1;
+            font-size: 36px;
+            span {
+                font-size: 28px;
+            }
+        }
+        &__text {
+            margin-top: 0;
+            font-size: 14px;
+        }
+        .button {
+            font-size: 10px;
+            width: 100%;
+            max-width: 154px;
+            height: 37px;
+            margin-top: 16px;
+        }
     }
     .section {
         &__title {
             font-size: 24px;
+        }
+    }
+    .bonus {
+       &-card {
+            width: calc(100% - 123px);
+       }
+       &-slide {
+           &__img {
+                max-height: 150px;
+           }
+       }
+
+        img {
+
+            margin: 15px auto;
+            max-width: 130px;
         }
     }
 }
@@ -227,17 +268,8 @@
 }
 @media only screen and (max-width : 320px) {
     .hero {
-        &__title {
-            line-height: 1;
-            font-size: 36px;
-            span {
-                font-size: 28px;
-            }
-        }
-        &__text {
-            margin-top: 0;
-            font-size: 14px;
-        }
+       
         
     }
+   
 }
