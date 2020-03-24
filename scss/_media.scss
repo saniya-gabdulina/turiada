@@ -208,9 +208,51 @@
 }
 @media only screen and (max-width : 768px) {
     .header {
+       .logo {
+            img {
+                width: 100%;
+                max-width: 48px;
+                height: 52px;
+                margin-left: 15px;
+            }
+       } 
         .social {
             &-vk {
+                background: url('../img/header/vk__mobile.png') no-repeat center;
+                width: 100%;
+                max-width: 37px;
+                height: 37px;
+                padding-left: 55px;
+                padding-right: 0;
+                &::before {
+                    // background: url('../img/header/vk__mobile.png') no-repeat center;
+                    // width: 100%;
+                    // max-width: 37px;
+                    // height: 37px;
+                    display: none;
+                }
+                span {
+                   display: none;
+                }
             }
+            &-telegram {
+                width: 100%;
+                max-width: 37px;
+                height: 37px;
+                background: url('../img/header/telegram__mobile.png') no-repeat center;
+                padding-left: 40px;
+                &::before {
+                    display: none;
+                    // background: url('../img/header/telegram__mobile.png');
+                    // width: 100%;
+                    // max-width: 37px;
+                    // height: 37px;
+                }
+                span {
+                    display: none;
+                }
+            }
+
         }
     }
     .hero {
@@ -218,16 +260,20 @@
         background-size: 100% auto;
         padding-bottom: 50%;
         &__title {
-            padding-top: 80px;
+            padding-top: 154px;
             line-height: 1;
             font-size: 36px;
+            margin-bottom: 11px;
             span {
                 font-size: 28px;
             }
         }
         &__text {
             margin-top: 0;
+            margin-left: 0;
             font-size: 14px;
+            width: 100%;
+            max-width: 250px;
         }
         .button {
             font-size: 10px;
@@ -235,6 +281,7 @@
             max-width: 154px;
             height: 37px;
             margin-top: 16px;
+            margin-left: 0;
         }
     }
     .section {
