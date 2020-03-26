@@ -364,11 +364,11 @@ template {
   font-style: normal; }
 
 .header {
-  position: relative;
+  position: absolute;
+  width: 100%;
   display: block;
   z-index: 1;
-  top: 0;
-  margin-bottom: -188px; }
+  top: 0; }
   .header .container {
     padding: 24px 0; }
   .header-nav {
@@ -443,7 +443,8 @@ template {
     font-size: 72px;
     font-family: Montserrat-Bold, san-serif;
     color: #333333;
-    line-height: 68.6px; }
+    line-height: 68.6px;
+    margin-top: 0; }
     .hero__title span {
       font-size: 54px; }
   .hero__text {
@@ -776,8 +777,7 @@ template {
 
 .bonus .section__text {
   width: 100%;
-  max-width: 651px;
-  margin-bottom: -14px; }
+  max-width: 651px; }
 
 .bonus-card {
   display: block;
@@ -792,8 +792,10 @@ template {
 .bonus-slide {
   text-align: center; }
   .bonus-slide__img {
-    height: 100%;
-    max-height: 170px;
+    height: 170px;
+    width: 170px;
+    -o-object-fit: contain;
+    object-fit: contain;
     margin-bottom: 12px; }
   .bonus-slide__title {
     font-size: 22px;
@@ -806,14 +808,16 @@ template {
   margin: 0 auto; }
 
 .bonus .slick-prev {
-  position: relative;
+  position: absolute;
   display: block;
   background-color: #B2CFF5;
   border-radius: 50%;
   width: 56px;
   height: 56px;
   left: -75px;
-  bottom: -232px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
   z-index: 99; }
   .bonus .slick-prev::before {
     position: absolute;
@@ -832,7 +836,9 @@ template {
   border-radius: 50%;
   width: 56px;
   height: 56px;
-  top: 232px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
   right: -67px; }
   .bonus .slick-next::before {
     position: absolute;
@@ -1083,9 +1089,26 @@ template {
       margin: 0 auto; }
   .bonus .section__title {
     margin-top: 0; }
+  .bonus .section__text {
+    margin-bottom: 30px; }
+  .bonus-slide__img {
+    margin: 0 auto 15px;
+    height: 150px;
+    width: 150px;
+    -o-object-fit: contain;
+    object-fit: contain; }
   .bonus-card {
-    width: calc(100% - 90px);
-    margin-top: 50px; } }
+    width: 100%;
+    max-width: 270px;
+    margin-top: 50px;
+    padding: 17px 15px 34px; }
+  .bonus .slick-slide {
+    padding: 0 15px; }
+  .bonus img {
+    display: block;
+    max-width: 100%;
+    max-height: 150px;
+    margin: 0 auto; } }
 
 @media only screen and (max-width: 768px) {
   .header .logo img {
@@ -1114,21 +1137,23 @@ template {
       display: none; }
   .hero {
     background: url("../img/bg_mobile.png") no-repeat center bottom;
+    min-height: 0;
     background-size: 100% auto;
-    padding-bottom: 50%; }
+    padding-bottom: 82%; }
     .hero__title {
       padding-top: 154px;
       line-height: 1;
       font-size: 36px;
       margin-bottom: 11px; }
       .hero__title span {
-        font-size: 28px; }
+        font-size: 24px; }
     .hero__text {
       margin-top: 0;
       margin-left: 0;
       font-size: 14px;
+      font-family: Ubuntu-Regular;
       width: 100%;
-      max-width: 250px; }
+      max-width: 500px; }
     .hero .button {
       font-size: 10px;
       width: 100%;
@@ -1244,14 +1269,22 @@ template {
     max-width: 154px;
     height: 37px; }
   .bonus-card {
-    width: calc(100% - 123px); }
+    min-height: 270px;
+    height: 100%; }
   .bonus-slide__img {
-    max-height: 150px; }
-  .bonus img {
-    margin: 15px auto;
-    max-width: 130px; } }
+    margin: 0 auto 15px;
+    height: 125px;
+    width: 125px;
+    -o-object-fit: contain;
+    object-fit: contain; }
+  .bonus-slide__title {
+    font-size: 16px; }
+  .bonus-slide__text {
+    font-size: 12px; } }
 
 @media only screen and (max-width: 580px) {
+  .hero__title {
+    padding-top: 107px; }
   .skills .slide-card {
     width: 100%;
     max-width: 180px; }

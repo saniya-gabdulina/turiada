@@ -2,13 +2,13 @@
     position: relative;
     min-height: 804.42px;
     background: url('../img/hero.bg.png') no-repeat center bottom / cover;
-
     &__title {
         padding-top: 213px;
         font-size: 72px;
         font-family: Montserrat-Bold, san-serif;
         color: #333333;
         line-height: 68.6px;
+        margin-top: 0;
         span {
             font-size: 54px;
 

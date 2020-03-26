@@ -1,9 +1,10 @@
 .header {
-    position: relative;
+    position: absolute;
+    width: 100%;
     display: block;
     z-index: 1;
     top: 0;
-    margin-bottom: -188px;
+    // margin-bottom: -188px;
     .container {
         padding: 24px 0;
     }

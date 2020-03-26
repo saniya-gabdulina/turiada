@@ -2,16 +2,19 @@
     .descrip {
         &-card {
             flex-wrap: wrap;
+
             &__item {
                 width: 100%;
                 max-width: 230px;
                 height: 230px;
+
                 p {
                     font-size: 18px;
                 }
             }
         }
     }
+
     .direc {
         .section__title {
             &::after {
@@ -19,76 +22,84 @@
                 max-width: 1137px;
             }
         }
+
         &-card {
             &__item {
                 width: 100%;
                 max-width: 220px;
                 margin: 0 auto;
+
                 .title {
                     font-size: 56px;
                 }
+
                 .text {
                     font-size: 18px;
                 }
-                
+
             }
         }
     }
+
     .program {
         &-card {
             justify-content: center;
+
             &__item {
                 margin-right: 20px;
             }
         }
     }
+
     .skills {
-        &-card {
-           
-        }
         .slick {
             &-list {
                 width: 100%;
                 max-width: 900px;
             }
+
             &-prev {
                 left: -5px;
             }
+
             &-next {
                 right: 51px;
             }
         }
 
     }
+
     .mentors {
         &-card {
             flex-wrap: wrap;
             width: 100%;
             max-width: 600px;
             margin: 0 auto;
+
             .text {
                 margin-bottom: 20px;
             }
         }
     }
-    .news {
-       
-    }
+
     .bonus {
         .slick {
             &-list {
                 width: 100%;
                 max-width: 900px;
             }
+
             &-prev {
                 left: 9px;
             }
+
             &-next {
                 right: 9px;
             }
         }
     }
 }
+
 @media only screen and (max-width : 1080px) {
     .direc {
         .section__title {
@@ -97,41 +108,50 @@
             }
         }
     }
+
 }
+
 @media only screen and (max-width : 991px) {
     .section {
         &__title {
             max-width: 500px;
             margin: 0 auto;
         }
+
         &__text {
             font-size: 18px;
             margin: 30px auto;
         }
     }
+
     .hero {
-       background-size: auto;
-       background-position: calc(46% + 20%) bottom;
-       &__title {
-           padding-top: 76px;
-       }
+        background-size: auto;
+        background-position: calc(46% + 20%) bottom;
+
+        &__title {
+            padding-top: 76px;
+        }
     }
+
     .descrip {
         &-card {
             width: 100%;
             max-width: 500px;
             margin: auto;
+
             &__item {
                 width: 100%;
                 max-width: 270px;
                 height: 270px;
                 margin-top: 15px;
+
                 p {
                     font-size: 22px;
                 }
             }
         }
     }
+
     .direc {
         &-card {
             display: flex;
@@ -139,20 +159,24 @@
             margin: 0 auto;
             margin-top: 30px;
             flex-wrap: wrap;
+
             &__item {
                 &:nth-child(even) {
                     margin-top: 0;
                 }
+
                 .title {
                     &::before {
                         top: 7px;
                         left: -70px;
                     }
+
                     &::after {
                         top: 22px;
                         left: -55px;
                     }
                 }
+
                 .button {
                     margin: 40px 0;
 
@@ -160,28 +184,34 @@
             }
         }
     }
+
     .program {
         .section__title {
             margin-top: 40px;
         }
     }
+
     .skills {
         .section__title {
             margin-bottom: 35px;
         }
+
         .slick {
             &-dots li button:before {
                 font-size: 22px;
             }
+
             &-track {
                 margin-left: 20px;
             }
         }
-           
+
     }
+
     .mentors {
         .container {
             padding-top: 100px;
+
             .section {
                 &__text {
                     margin-top: 33px;
@@ -189,36 +219,69 @@
             }
         }
     }
+
     .news {
         background-position: center bottom;
         background-size: 800px auto;
         padding-bottom: 600px;
-        
+
         &__form {
             max-width: 500px;
             margin: 0 auto;
         }
     }
+
     .bonus {
-        .section__title {
-            margin-top: 0;
+        .section {
+            &__title {
+                margin-top: 0;
+            }
+
+            &__text {
+                margin-bottom: 30px;
+            }
         }
+
+        &-slide {
+            &__img {
+                margin: 0 auto 15px;
+                height: 150px;
+                width: 150px;
+                object-fit: contain;
+            }
+        }
+
         &-card {
-            width: calc(100% - 90px);
+            width: 100%;
+            max-width: 270px;
             margin-top: 50px;
+            padding: 17px 15px 34px;
+        }
+
+        .slick-slide {
+            padding: 0 15px;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            max-height: 150px;
+            margin: 0 auto;
         }
     }
 }
+
 @media only screen and (max-width : 768px) {
     .header {
-       .logo {
+        .logo {
             img {
                 width: 100%;
                 max-width: 48px;
                 height: 52px;
                 margin-left: 15px;
             }
-       } 
+        }
+
         .social {
             &-vk {
                 background: url('../img/header/vk__mobile.png') no-repeat center;
@@ -226,29 +289,28 @@
                 height: 37px;
                 padding-left: 55px;
                 padding-right: 0;
+
                 &::before {
-                    // background: url('../img/header/vk__mobile.png') no-repeat center;
-                    // width: 100%;
-                    // max-width: 37px;
-                    // height: 37px;
+
                     display: none;
                 }
+
                 span {
-                   display: none;
+                    display: none;
                 }
             }
+
             &-telegram {
                 width: 37px;
                 height: 37px;
                 background: url('../img/header/telegram__mobile.png') no-repeat center;
                 padding-left: 40px;
+
                 &::before {
                     display: none;
-                    // background: url('../img/header/telegram__mobile.png');
-                    // width: 100%;
-                    // max-width: 37px;
-                    // height: 37px;
+
                 }
+
                 span {
                     display: none;
                 }
@@ -256,26 +318,33 @@
 
         }
     }
+
     .hero {
         background: url('../img/bg_mobile.png') no-repeat center bottom;
+        min-height: 0;
         background-size: 100% auto;
-        padding-bottom: 50%;
+        padding-bottom: 82%;
+
         &__title {
             padding-top: 154px;
             line-height: 1;
             font-size: 36px;
             margin-bottom: 11px;
+
             span {
-                font-size: 28px;
+                font-size: 24px;
             }
         }
+
         &__text {
             margin-top: 0;
             margin-left: 0;
             font-size: 14px;
+            font-family: Ubuntu-Regular;
             width: 100%;
-            max-width: 250px;
+            max-width: 500px;
         }
+
         .button {
             font-size: 10px;
             width: 100%;
@@ -285,24 +354,29 @@
             margin-left: 0;
         }
     }
+
     .section {
         &__title {
             font-size: 24px;
         }
+
         &__text {
             font-size: 12px;
         }
     }
+
     .direc {
         .section__title {
             position: relative;
-            
+
         }
+
         &-card {
             position: relative;
             padding-top: 40px;
             margin: 0 auto;
             display: block;
+
             &::before {
                 position: absolute;
                 content: '';
@@ -312,17 +386,21 @@
                 left: -14px;
                 top: 29px;
             }
+
             &__item {
                 width: 100%;
                 max-width: 165px;
                 height: 170px;
                 margin-left: 65px;
                 padding-top: 0;
+
                 &:nth-child(2) {
                     margin-top: 30px;
                 }
+
                 .title {
                     font-size: 50px;
+
                     &::before {
                         width: 100%;
                         max-width: 35px;
@@ -330,6 +408,7 @@
                         top: 10px;
                         left: -63px;
                     }
+
                     &::after {
                         width: 100%;
                         max-width: 12.66px;
@@ -338,9 +417,11 @@
                         left: -52px;
                     }
                 }
+
                 .text {
                     font-size: 16px;
                 }
+
                 .button {
                     font-size: 10px;
                     width: 100%;
@@ -350,16 +431,18 @@
                 }
             }
         }
-        
+
     }
+
     .program {
         &-card {
             &__item {
                 span {
                     font-size: 16px;
-                    height: 46px; 
+                    height: 46px;
                 }
             }
+
             &__text {
                 .button {
                     margin: 0 auto;
@@ -373,33 +456,40 @@
 
         }
     }
+
     .descrip {
         &-card {
             &__item {
                 width: 100%;
                 max-width: 200px;
                 height: 190px;
-                p{
+
+                p {
                     font-size: 16px;
                     margin-top: 7px;
                 }
-                img{
+
+                img {
                     width: 73px;
                     height: 73px;
                 }
             }
         }
     }
+
     .skills {
         &-slide {
             margin-left: 10px;
+
             &__title {
                 font-size: 16px;
             }
+
             &__text {
                 font-size: 12px;
             }
         }
+
         .slide {
             display: flex;
 
@@ -409,19 +499,23 @@
                 width: 100%;
             }
         }
+
         .slick {
             &-prev {
                 width: 40px;
                 height: 40px;
+
                 &::before {
                     top: 10px;
                     left: 12px;
                 }
             }
+
             &-next {
                 width: 40px;
                 height: 40px;
                 right: -27px;
+
                 &::before {
                     top: 10px;
                     left: 16px;
@@ -430,6 +524,7 @@
 
         }
     }
+
     .news {
         .section {
             &__text {
@@ -438,12 +533,14 @@
                 }
             }
         }
+
         input {
             font-size: 12px;
             width: 100%;
             max-width: 289px;
             height: 44px;
         }
+
         .button {
             font-size: 10px;
             width: 100%;
@@ -451,32 +548,57 @@
             height: 37px;
         }
     }
+
     .bonus {
-       &-card {
-            width: calc(100% - 123px);
-       }
-       &-slide {
-           &__img {
-                max-height: 150px;
-           }
-       }
-
-        img {
-
-            margin: 15px auto;
-            max-width: 130px;
+        &-card {
+            min-height: 270px;
+            height: 100%;
+            // padding: 17px 20px;
+            // width: calc(100% - 123px);
         }
+
+        &-slide {
+            &__img {
+                margin: 0 auto 15px;
+                height: 125px;
+                width: 125px;
+                object-fit: contain;
+            }
+
+            &__title {
+                font-size: 16px;
+            }
+
+            &__text {
+                font-size: 12px;
+            }
+        }
+
+        // img {
+
+        //     margin: 15px auto;
+        //     max-width: 130px;
+        //     // height: 130px;
+        // }
     }
 }
 
 @media only screen and (max-width : 580px) {
+    .hero {
+        &__title {
+            padding-top: 107px;
+        }
+
+    }
+
     .skills {
-        .slide{
+        .slide {
             &-card {
                 width: 100%;
                 max-width: 180px;
             }
         }
+
         .slick {
             &-next {
                 right: -14px;
@@ -484,25 +606,30 @@
         }
     }
 }
+
 @media only screen and (max-width : 480px) {
-    
+
     .news {
-        background: url('../img/news/news__mobile__bg.png') no-repeat ;
+        background: url('../img/news/news__mobile__bg.png') no-repeat;
         background-position: 44px bottom;
         padding-bottom: 385px;
+
         .button {
             width: 100%;
             max-width: 126px;
         }
     }
 }
+
 @media only screen and (max-width : 320px) {
-   .skills {
+    .hero {}
+
+    .skills {
         .slick {
             &-next {
                 right: -22px;
             }
         }
-   }
-   
+    }
+
 }
