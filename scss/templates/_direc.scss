@@ -22,7 +22,7 @@
         &__item {
             width: 100%;
             max-width: 250px;
-            height: 164px;
+            // height: 164px;
             &:nth-child(even) {
                 margin-top: 30px;
             }
@@ -64,22 +64,25 @@
                 color: #181818;
                 font-family: Ubuntu-Medium, serif;
             }
+            .button {
+                display: flex;
+                justify-content: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 16px;
+                color: #181818;
+                background: #FFD200;
+                border-radius: 29.5px;
+                outline: none;
+                width: 100%;
+                max-width: 246px;
+                height: 59px;
+                margin-top: 9px;
+                margin-bottom: 90px;
+                cursor: pointer;
+                border: none;
+            }
         }
     }
-    .button {
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 16px;
-        color: #181818;
-        background: #FFD200;
-        border-radius: 29.5px;
-        outline: none;
-        width: 100%;
-        max-width: 246px;
-        height: 59px;
-        margin-top: 9px;
-        margin-bottom: 90px;
-        cursor: pointer;
-        border: none;
-    }
+    
 }

@@ -23,12 +23,14 @@
             &__item {
                 width: 100%;
                 max-width: 220px;
+                margin: 0 auto;
                 .title {
                     font-size: 56px;
                 }
                 .text {
                     font-size: 18px;
                 }
+                
             }
         }
     }
@@ -117,7 +119,7 @@
     .descrip {
         &-card {
             width: 100%;
-            max-width: 780px;
+            max-width: 500px;
             margin: auto;
             &__item {
                 width: 100%;
@@ -151,10 +153,11 @@
                         left: -55px;
                     }
                 }
+                .button {
+                    margin: 40px 0;
+
+                }
             }
-        }
-        .button {
-            margin-left: 20px;
         }
     }
     .program {
@@ -219,8 +222,7 @@
         .social {
             &-vk {
                 background: url('../img/header/vk__mobile.png') no-repeat center;
-                width: 100%;
-                max-width: 37px;
+                width: 37px;
                 height: 37px;
                 padding-left: 55px;
                 padding-right: 0;
@@ -236,8 +238,7 @@
                 }
             }
             &-telegram {
-                width: 100%;
-                max-width: 37px;
+                width: 37px;
                 height: 37px;
                 background: url('../img/header/telegram__mobile.png') no-repeat center;
                 padding-left: 40px;
@@ -288,6 +289,167 @@
         &__title {
             font-size: 24px;
         }
+        &__text {
+            font-size: 12px;
+        }
+    }
+    .direc {
+        .section__title {
+            position: relative;
+            
+        }
+        &-card {
+            position: relative;
+            padding-top: 40px;
+            margin: 0 auto;
+            display: block;
+            &::before {
+                position: absolute;
+                content: '';
+                background: url('../img/direc/direc__mobile-img.png') no-repeat;
+                width: 320px;
+                height: 735px;
+                left: -14px;
+                top: 29px;
+            }
+            &__item {
+                width: 100%;
+                max-width: 165px;
+                height: 170px;
+                margin-left: 65px;
+                padding-top: 0;
+                &:nth-child(2) {
+                    margin-top: 30px;
+                }
+                .title {
+                    font-size: 50px;
+                    &::before {
+                        width: 100%;
+                        max-width: 35px;
+                        height: 35px;
+                        top: 10px;
+                        left: -63px;
+                    }
+                    &::after {
+                        width: 100%;
+                        max-width: 12.66px;
+                        height: 12.66px;
+                        top: 21px;
+                        left: -52px;
+                    }
+                }
+                .text {
+                    font-size: 16px;
+                }
+                .button {
+                    font-size: 10px;
+                    width: 100%;
+                    max-width: 154px;
+                    height: 37px;
+                    margin-top: 20px;
+                }
+            }
+        }
+        
+    }
+    .program {
+        &-card {
+            &__item {
+                span {
+                    font-size: 16px;
+                    height: 46px; 
+                }
+            }
+            &__text {
+                .button {
+                    margin: 0 auto;
+                    font-size: 10px;
+                    width: 100%;
+                    max-width: 154px;
+                    height: 37px;
+                    margin-top: 20px;
+                }
+            }
+
+        }
+    }
+    .descrip {
+        &-card {
+            &__item {
+                width: 100%;
+                max-width: 200px;
+                height: 190px;
+                p{
+                    font-size: 16px;
+                    margin-top: 7px;
+                }
+                img{
+                    width: 73px;
+                    height: 73px;
+                }
+            }
+        }
+    }
+    .skills {
+        &-slide {
+            margin-left: 10px;
+            &__title {
+                font-size: 16px;
+            }
+            &__text {
+                font-size: 12px;
+            }
+        }
+        .slide {
+            display: flex;
+
+            &-card {
+                margin-left: 37px;
+                max-width: 218px;
+                width: 100%;
+            }
+        }
+        .slick {
+            &-prev {
+                width: 40px;
+                height: 40px;
+                &::before {
+                    top: 10px;
+                    left: 12px;
+                }
+            }
+            &-next {
+                width: 40px;
+                height: 40px;
+                right: -27px;
+                &::before {
+                    top: 10px;
+                    left: 16px;
+                }
+            }
+
+        }
+    }
+    .news {
+        .section {
+            &__text {
+                span {
+                    margin-top: 10px;
+                }
+            }
+        }
+        input {
+            font-size: 12px;
+            width: 100%;
+            max-width: 289px;
+            height: 44px;
+        }
+        .button {
+            font-size: 10px;
+            width: 100%;
+            max-width: 154px;
+            height: 37px;
+        }
     }
     .bonus {
        &-card {
@@ -306,17 +468,41 @@
         }
     }
 }
+
+@media only screen and (max-width : 580px) {
+    .skills {
+        .slide{
+            &-card {
+                width: 100%;
+                max-width: 180px;
+            }
+        }
+        .slick {
+            &-next {
+                right: -14px;
+            }
+        }
+    }
+}
 @media only screen and (max-width : 480px) {
-    .hero {
-        &__title {
-            // padding-top: ;
+    
+    .news {
+        background: url('../img/news/news__mobile__bg.png') no-repeat ;
+        background-position: 44px bottom;
+        padding-bottom: 385px;
+        .button {
+            width: 100%;
+            max-width: 126px;
         }
     }
 }
 @media only screen and (max-width : 320px) {
-    .hero {
-       
-        
-    }
+   .skills {
+        .slick {
+            &-next {
+                right: -22px;
+            }
+        }
+   }
    
 }

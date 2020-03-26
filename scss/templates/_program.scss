@@ -10,6 +10,9 @@
         flex-wrap: wrap;
         &__item {
             padding-bottom: 42px;
+            img {
+                width: 100%;
+            }
             span {
                 position: absolute;
                 display: flex;
