@@ -108,7 +108,33 @@
             }
         }
     }
-
+    .regis {
+        &-card {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 700px;
+            height: 100%;
+            margin: 56px auto 0;
+            &::before{
+                display: none;
+            }
+            &__item {
+                min-width: 200px;
+                width: 100%;
+                height: 100px; 
+                margin-top: 42px;
+                &:nth-child(odd) {
+                    bottom: 0;
+                    left: 0;
+                }
+                &:nth-child(even) {
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width : 991px) {
@@ -254,7 +280,7 @@
         &-card {
             width: 100%;
             max-width: 270px;
-            margin-top: 50px;
+            margin: 50px 15px;
             padding: 17px 15px 34px;
         }
 
@@ -267,6 +293,26 @@
             max-width: 100%;
             max-height: 150px;
             margin: 0 auto;
+        }
+    }
+    .regis {
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        &-card {
+            width: 100%;
+            max-width: 500px;
+        }
+        .button {
+            margin: 0 auto;
+        }
+    }
+    .footer {
+        &-content {
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 600px;
         }
     }
 }
@@ -437,13 +483,39 @@
     .program {
         &-card {
             &__item {
+                width: 100%;
+                
+                // max-width: 200px;
+                margin: 0 5px;
+                &-inner{
+                    width: 100%;
+                    margin: 0 auto;
+                    max-width: 200px;
+                    height: 255px;
+                
+                }
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
                 span {
+                    margin-top: -51px;
                     font-size: 16px;
                     height: 46px;
+                    max-width: 170px;
                 }
             }
 
             &__text {
+                width: 200px;
+                height: 255px;
+                .title {
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 14px;
+                }
                 .button {
                     margin: 0 auto;
                     font-size: 10px;
@@ -479,14 +551,24 @@
 
     .skills {
         &-slide {
-            margin-left: 10px;
-
             &__title {
                 font-size: 16px;
             }
 
             &__text {
+                width: 100%;
+                max-width: 200px;
                 font-size: 12px;
+            }
+            &__img{
+                width: 90px;
+                height: 80px;
+                margin-bottom: 0;
+            }
+            img {
+                width: 90px;
+                height: 80px;
+                object-fit: contain;
             }
         }
 
@@ -494,8 +576,8 @@
             display: flex;
 
             &-card {
-                margin-left: 37px;
-                max-width: 218px;
+                // margin-left: 37px;
+                max-width: 350px;
                 width: 100%;
             }
         }
@@ -504,7 +586,7 @@
             &-prev {
                 width: 40px;
                 height: 40px;
-
+                top: 50%;
                 &::before {
                     top: 10px;
                     left: 12px;
@@ -515,7 +597,7 @@
                 width: 40px;
                 height: 40px;
                 right: -27px;
-
+                top: 50%;
                 &::before {
                     top: 10px;
                     left: 16px;
@@ -524,7 +606,25 @@
 
         }
     }
+    .mentors {
+        &-card {
+            &__item {
+                max-width: 150px;
+                margin: auto 17px;
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+                .title {
+                    font-size: 16px;
+                }
+                .text {
+                    font-size: 12px;
 
+                }
+            }
+        }
+    }
     .news {
         .section {
             &__text {
@@ -553,6 +653,9 @@
         &-card {
             min-height: 270px;
             height: 100%;
+            max-width: 200px;
+            width: 100%;
+            margin: 0 auto;
             // padding: 17px 20px;
             // width: calc(100% - 123px);
         }
@@ -573,14 +676,35 @@
                 font-size: 12px;
             }
         }
-
-        // img {
-
-        //     margin: 15px auto;
-        //     max-width: 130px;
-        //     // height: 130px;
-        // }
+        .slick {
+            &-next {
+                right: 0;
+                width: 40px;
+                height: 40px;
+                &::before {
+                    top: 11px;
+                    left: 14px;
+                }
+            }
+            &-prev {
+                left: 0;
+                width: 40px;
+                height: 40px;
+                &::before {
+                    top: 11px;
+                    left: 11px;
+                }
+            }
+        }
     }
+    .regis {
+        .button {
+            font-size: 10px;
+            width: 170px;
+            height: 37px;
+        }
+    }
+    
 }
 
 @media only screen and (max-width : 580px) {
@@ -592,10 +716,23 @@
     }
 
     .skills {
+        &-slide{
+            margin: 0 auto;
+            &__img {
+                margin: 0 auto;
+            }
+            &__title {
+                text-align: center;
+            }
+            &__text{
+                text-align: center;
+            }
+        }
         .slide {
             &-card {
                 width: 100%;
-                max-width: 180px;
+                max-width: 200px;
+                margin: 0 auto;
             }
         }
 
@@ -603,6 +740,7 @@
             &-next {
                 right: -14px;
             }
+            
         }
     }
 }
@@ -622,8 +760,7 @@
 }
 
 @media only screen and (max-width : 320px) {
-    .hero {}
-
+    
     .skills {
         .slick {
             &-next {

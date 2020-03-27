@@ -11,7 +11,8 @@
             display: block;
             content: '';
             background: url(../img/regis/regis-vector__img.png) no-repeat;
-            width: 1072px;
+            max-width: 1072px;
+            width: 100%;
             height: 331px;
             top: -192px;
             right: 90px;
@@ -84,6 +85,6 @@
         height: 59px;
         cursor: pointer;
         border: none;
-    
+        order: 2;
     }
 }
