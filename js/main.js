@@ -116,107 +116,72 @@ $(document).ready(function () {
 			// instead of a settings object
 		]
 	});
-	if ($('.mentors-card.slick-slider').length === 0  && $(window).width() <= 768) {
-		console.log('Slick create');
-		$('.mentors-card').slick({
-			dots: true,
-			arrows: false,
-			infinite: true,
-			speed: 300,
-			slidesToScroll: 1,
-			slidesToShow: 3,
-			responsive: [{
-				breakpoint: 440,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
-					infinite: true,
-					dots: true,
-				}
-			}]
-			
-			
-		});
-	} else if ($('.mentors-card.slick-slider').length !== 0 && $(window).width() > 768) {
-		console.log('Slick destroyed');
-		$('.mentors-card.slick-slider').slick('unslick');
-	}
 
+	function sliderOnMobile() {
+		if ($('.program-card.slick-slider').length === 0  && $(window).width() <= 809) {
+			console.log('Slick create');
+			$('.program-card').slick({
+				dots: true,
+				arrows: false,
+				infinite: true,
+				speed: 300,
+				slidesToScroll: 1,
+				slidesToShow: 3,
+				responsive: [{
+					breakpoint: 680,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1,
+						infinite: true,
+						dots: true
+					},
+				},
+				{
+					breakpoint: 500,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						infinite: true,
+						dots: true
+					}
+					
+				}]
+			});
+		} else if ($('.program-card.slick-slider').length !== 0 && $(window).width() > 809) {
+			console.log('Slick destroyed');
+			$('.program-card.slick-slider').slick('unslick');
+		};
 
-	if ($('.program-card.slick-slider').length === 0  && $(window).width() <= 768) {
-		console.log('Slick create');
-		$('.program-card').slick({
-			dots: true,
-			arrows: false,
-			infinite: true,
-			speed: 300,
-			slidesToScroll: 1,
-			slidesToShow: 3,
-			responsive: [{
-				breakpoint: 440,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					infinite: true,
-					dots: true
-				}
-			}]
-		});
-	} else if ($('.program-card.slick-slider').length !== 0 && $(window).width() > 768) {
-		console.log('Slick destroyed');
-		$('.program-card.slick-slider').slick('unslick');
+		if ($('.mentors-card.slick-slider').length === 0  && $(window).width() <= 768) {
+			console.log('Slick create');
+			$('.mentors-card').slick({
+				dots: true,
+				arrows: false,
+				infinite: true,
+				speed: 300,
+				slidesToScroll: 1,
+				slidesToShow: 3,
+				responsive: [{
+					breakpoint: 440,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1,
+						infinite: true,
+						dots: true
+					}
+				}]
+				
+				
+			});
+		} else if ($('.mentors-card.slick-slider').length !== 0 && $(window).width() > 768) {
+			console.log('Slick destroyed');
+			$('.mentors-card.slick-slider').slick('unslick');
+		}
 	}
+	sliderOnMobile();
+
+	$(window).resize(function() {
+		sliderOnMobile();
+	})
 });
 
-$(window).resize(function() {
-	if ($('.mentors-card.slick-slider').length === 0  && $(window).width() <= 768) {
-		console.log('Slick create');
-		$('.mentors-card').slick({
-			dots: true,
-			arrows: false,
-			infinite: true,
-			speed: 300,
-			slidesToScroll: 1,
-			slidesToShow: 3,
-			responsive: [{
-				breakpoint: 440,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
-					infinite: true,
-					dots: true,
-				}
-			}]
-			
-			
-		});
-	} else if ($('.mentors-card.slick-slider').length !== 0 && $(window).width() > 768) {
-		console.log('Slick destroyed');
-		$('.mentors-card.slick-slider').slick('unslick');
-	}
-
-
-	if ($('.program-card.slick-slider').length === 0  && $(window).width() <= 768) {
-		console.log('Slick create');
-		$('.program-card').slick({
-			dots: true,
-			arrows: false,
-			infinite: true,
-			speed: 300,
-			slidesToScroll: 1,
-			slidesToShow: 3,
-			responsive: [{
-				breakpoint: 440,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					infinite: true,
-					dots: true
-				}
-			}]
-		});
-	} else if ($('.program-card.slick-slider').length !== 0 && $(window).width() > 768) {
-		console.log('Slick destroyed');
-		$('.program-card.slick-slider').slick('unslick');
-	}
-})
