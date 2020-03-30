@@ -36,6 +36,23 @@ body {
   justify-content: space-between;
   flex-wrap: nowrap; }
 
+.slick-dots li {
+  display: inline-block;
+  width: 20px;
+  height: 20px; }
+  .slick-dots li button {
+    padding: 5px;
+    width: 20px;
+    height: 20px; }
+    .slick-dots li button:before {
+      position: static;
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: black; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -921,21 +938,24 @@ template {
         height: 17px;
         top: -46px;
         left: 15px; }
-  .regis .button {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 16px;
-    color: #181818;
-    background: #FFD200;
-    border-radius: 29.5px;
-    outline: none;
-    width: 100%;
-    max-width: 272px;
-    height: 59px;
-    cursor: pointer;
-    border: none;
-    -webkit-box-ordinal-group: 3;
-    order: 2; }
+  .regis .wrapper {
+    display: -webkit-box;
+    display: flex; }
+    .regis .wrapper .button {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 16px;
+      color: #181818;
+      background: #FFD200;
+      border-radius: 29.5px;
+      outline: none;
+      width: 100%;
+      max-width: 272px;
+      height: 59px;
+      cursor: pointer;
+      border: none; }
+    .regis .wrapper .text__mobile {
+      display: none; }
 
 .footer {
   display: block;
@@ -1098,8 +1118,12 @@ template {
       left: -55px; }
     .direc-card__item .button {
       margin: 40px 0; }
+  .program-card__text {
+    max-width: 220px; }
   .program .section__title {
     margin-top: 40px; }
+  .program .slick-list {
+    max-height: 400px; }
   .skills .section__title {
     margin-bottom: 35px; }
   .skills .slick-dots li button:before {
@@ -1150,10 +1174,26 @@ template {
     max-width: 500px; }
   .regis .button {
     margin: 0 auto; }
+  .regis .wrapper {
+    -webkit-box-ordinal-group: 3;
+    order: 2; }
+  .footer__title {
+    margin: 0 auto;
+    margin-bottom: 30px; }
   .footer-content {
     flex-wrap: wrap;
     width: 100%;
-    max-width: 600px; } }
+    max-width: 600px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column; }
+    .footer-content__item .card-row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column; }
+      .footer-content__item .card-row .card:nth-child(2) {
+        margin-top: 21px;
+        margin-left: 0; } }
 
 @media only screen and (max-width: 768px) {
   .header .logo img {
@@ -1286,7 +1326,7 @@ template {
       width: 100%;
       max-width: 154px;
       height: 37px;
-      margin-top: 20px; }
+      margin-top: 30px; }
   .descrip-card__item {
     width: 100%;
     max-width: 200px;
@@ -1333,6 +1373,8 @@ template {
     .skills .slick-next::before {
       top: 10px;
       left: 16px; }
+  .skills .slick-track {
+    margin: 0 auto; }
   .mentors-card__item {
     max-width: 150px;
     margin: auto 17px; }
@@ -1385,10 +1427,32 @@ template {
     .bonus .slick-prev::before {
       top: 11px;
       left: 11px; }
-  .regis .button {
-    font-size: 10px;
-    width: 170px;
-    height: 37px; } }
+  .regis {
+    margin-top: 100px; }
+    .regis .wrapper {
+      margin-top: 32px;
+      height: 37px; }
+      .regis .wrapper .button {
+        font-size: 10px;
+        width: 170px;
+        height: 37px; }
+  .footer__title {
+    font-size: 24px; }
+  .footer__text {
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 10px; }
+  .footer-content__item .title {
+    font-size: 12px;
+    margin-top: 26px; }
+  .footer-content__item .text {
+    font-size: 12px; }
+  .footer-content__item:nth-child(2) img {
+    max-width: 170px;
+    height: 60px; }
+  .footer-content__item img {
+    max-width: 57px;
+    width: 100%; } }
 
 @media only screen and (max-width: 580px) {
   .hero__title {
@@ -1417,6 +1481,48 @@ template {
       width: 100%;
       max-width: 126px; } }
 
+@media only screen and (max-width: 430px) {
+  .regis-card {
+    position: relative; }
+    .regis-card::before {
+      display: block;
+      content: '';
+      position: absolute;
+      background: url("../img/regis/regis__mobile__vector.png") no-repeat;
+      width: 100px;
+      min-height: 340px;
+      top: 5px;
+      left: 4px; }
+    .regis-card__item {
+      height: 60px;
+      margin-left: 54px;
+      margin-top: 4px; }
+      .regis-card__item::before {
+        top: 0px;
+        left: -56px;
+        width: 35px;
+        height: 35px; }
+      .regis-card__item::after {
+        top: 11.5px;
+        left: -44.7px;
+        width: 12.66px;
+        height: 12.66px; }
+  .regis .wrapper .button {
+    margin-right: 5px;
+    margin-left: 0; }
+  .regis .wrapper .text__mobile {
+    display: block;
+    font-size: 12px;
+    width: 117px;
+    height: 28px;
+    margin-right: 36px;
+    margin-top: 0;
+    margin-bottom: 29px; }
+  .regis span {
+    display: none; } }
+
 @media only screen and (max-width: 320px) {
   .skills .slick-next {
-    right: -22px; } }
+    right: -22px; }
+  .regis .wrapper .text__mobile {
+    margin-right: -12px; } }

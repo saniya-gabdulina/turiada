@@ -1,3 +1,5 @@
+$slickdot: 10px;
+
 *, *:before, *:after {
     box-sizing: border-box
 }
@@ -37,4 +39,25 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: nowrap;
+}
+.slick {
+    &-dots li {
+        display: inline-block;
+        width: $slickdot*2;
+        height: $slickdot*2;
+        button {
+            padding: $slickdot/2;
+            width: $slickdot*2;
+            height: $slickdot*2;
+            &:before {
+                position: static;
+                content: '';
+                display: block;
+                width: $slickdot;
+                height: $slickdot;
+                border-radius: 50%;
+                background-color: black;
+            }
+        }
+    }
 }

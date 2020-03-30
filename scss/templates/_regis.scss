@@ -72,19 +72,25 @@
 
         }
     } 
-    .button {
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 16px;
-        color: #181818;
-        background: #FFD200;
-        border-radius: 29.5px;
-        outline: none;
-        width: 100%;
-        max-width: 272px;
-        height: 59px;
-        cursor: pointer;
-        border: none;
-        order: 2;
+    .wrapper {
+        display: flex;
+        .button {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 16px;
+            color: #181818;
+            background: #FFD200;
+            border-radius: 29.5px;
+            outline: none;
+            width: 100%;
+            max-width: 272px;
+            height: 59px;
+            cursor: pointer;
+            border: none;
+        }
+        .text__mobile {
+            display: none;
+        }
     }
+    
 }

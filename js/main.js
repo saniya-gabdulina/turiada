@@ -71,7 +71,7 @@ $(document).ready(function () {
 					slidesToShow: 3,
 					slidesToScroll: 1,
 					infinite: true,
-					dots: true,
+					dots: false,
 				}
 			},
 			{
@@ -116,14 +116,11 @@ $(document).ready(function () {
 			// instead of a settings object
 		]
 	});
-});
-
-$(window).resize(function() {
 	if ($('.mentors-card.slick-slider').length === 0  && $(window).width() <= 768) {
 		console.log('Slick create');
 		$('.mentors-card').slick({
-			dots: false,
-			arrows: true,
+			dots: true,
+			arrows: false,
 			infinite: true,
 			speed: 300,
 			slidesToScroll: 1,
@@ -149,8 +146,61 @@ $(window).resize(function() {
 	if ($('.program-card.slick-slider').length === 0  && $(window).width() <= 768) {
 		console.log('Slick create');
 		$('.program-card').slick({
-			dots: false,
-			arrows: true,
+			dots: true,
+			arrows: false,
+			infinite: true,
+			speed: 300,
+			slidesToScroll: 1,
+			slidesToShow: 3,
+			responsive: [{
+				breakpoint: 440,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true
+				}
+			}]
+		});
+	} else if ($('.program-card.slick-slider').length !== 0 && $(window).width() > 768) {
+		console.log('Slick destroyed');
+		$('.program-card.slick-slider').slick('unslick');
+	}
+});
+
+$(window).resize(function() {
+	if ($('.mentors-card.slick-slider').length === 0  && $(window).width() <= 768) {
+		console.log('Slick create');
+		$('.mentors-card').slick({
+			dots: true,
+			arrows: false,
+			infinite: true,
+			speed: 300,
+			slidesToScroll: 1,
+			slidesToShow: 3,
+			responsive: [{
+				breakpoint: 440,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true,
+				}
+			}]
+			
+			
+		});
+	} else if ($('.mentors-card.slick-slider').length !== 0 && $(window).width() > 768) {
+		console.log('Slick destroyed');
+		$('.mentors-card.slick-slider').slick('unslick');
+	}
+
+
+	if ($('.program-card.slick-slider').length === 0  && $(window).width() <= 768) {
+		console.log('Slick create');
+		$('.program-card').slick({
+			dots: true,
+			arrows: false,
 			infinite: true,
 			speed: 300,
 			slidesToScroll: 1,
