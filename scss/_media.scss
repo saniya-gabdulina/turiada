@@ -160,7 +160,7 @@
     .hero {
         background-size: auto;
         background-position: calc(46% + 20%) bottom;
-
+        background: url('../img/hero.bg.png') #c8dcf3 no-repeat center bottom / cover;
         &__title {
             padding-top: 124px;
         }
