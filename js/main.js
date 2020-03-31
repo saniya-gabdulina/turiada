@@ -152,7 +152,7 @@ $(document).ready(function () {
 			$('.program-card.slick-slider').slick('unslick');
 		};
 
-		if ($('.mentors-card.slick-slider').length === 0  && $(window).width() <= 768) {
+		if ($('.mentors-card.slick-slider').length === 0  && $(window).width() <= 1352) {
 			console.log('Slick create');
 			$('.mentors-card').slick({
 				dots: true,
@@ -160,20 +160,37 @@ $(document).ready(function () {
 				infinite: true,
 				speed: 300,
 				slidesToScroll: 1,
-				slidesToShow: 3,
+				slidesToShow: 5,
 				responsive: [{
-					breakpoint: 440,
+					breakpoint: 920,
 					settings: {
-						slidesToShow: 2,
+						slidesToShow: 4,
 						slidesToScroll: 1,
 						infinite: true,
 						dots: true
+					},
+					
+				},
+				{
+					breakpoint: 500,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 1,
+					
+					},
+					
+				},
+				{
+					breakpoint: 324,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1,
+						
 					}
+					
 				}]
-				
-				
 			});
-		} else if ($('.mentors-card.slick-slider').length !== 0 && $(window).width() > 768) {
+		} else if ($('.mentors-card.slick-slider').length !== 0 && $(window).width() > 1352) {
 			console.log('Slick destroyed');
 			$('.mentors-card.slick-slider').slick('unslick');
 		}

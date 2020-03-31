@@ -42,6 +42,9 @@
     }
 
     .program {
+        &-title {
+            margin-top: 27px;
+        }
         &-card {
             justify-content: center;
 
@@ -70,14 +73,9 @@
     }
 
     .mentors {
-        &-card {
-            flex-wrap: wrap;
-            width: 100%;
-            max-width: 600px;
-            margin: 0 auto;
-
-            .text {
-                margin-bottom: 20px;
+        .slick {
+            &-dots {
+                bottom: -78px;
             }
         }
     }
@@ -169,7 +167,7 @@
     .descrip {
         &-card {
             width: 100%;
-            max-width: 500px;
+            max-width: 7 00px;
             margin: auto;
 
             &__item {
@@ -220,6 +218,26 @@
 
     .program {
         &-card {
+            &__item {
+                &-inner{
+                    width: 100%;
+                    margin: 0 auto;
+                    max-width: 200px;
+                    height: 255px;
+                
+                }
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                span {
+                    margin-top: -51px;
+                    font-size: 16px;
+                    height: 46px;
+                    max-width: 170px;
+                }
+            }
             &__text {
                 max-width: 220px;
             }
@@ -534,27 +552,7 @@
 
     .program {
         &-card {
-            &__item {
-               
-                &-inner{
-                    width: 100%;
-                    margin: 0 auto;
-                    max-width: 200px;
-                    height: 255px;
-                
-                }
-                img {
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
-                }
-                span {
-                    margin-top: -51px;
-                    font-size: 16px;
-                    height: 46px;
-                    max-width: 170px;
-                }
-            }
+           
 
             &__text {
                 max-width: 200px;

@@ -798,6 +798,9 @@ template {
     cursor: pointer;
     border: none; }
 
+.bonus .section__title {
+  margin-top: 200px; }
+
 .bonus .section__text {
   width: 100%;
   max-width: 651px; }
@@ -1026,6 +1029,8 @@ template {
       font-size: 56px; }
     .direc-card__item .text {
       font-size: 18px; }
+  .program-title {
+    margin-top: 27px; }
   .program-card {
     -webkit-box-pack: center;
     justify-content: center; }
@@ -1038,13 +1043,8 @@ template {
     left: -5px; }
   .skills .slick-next {
     right: 51px; }
-  .mentors-card {
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto; }
-    .mentors-card .text {
-      margin-bottom: 20px; }
+  .mentors .slick-dots {
+    bottom: -78px; }
   .bonus .slick-list {
     width: 100%;
     max-width: 900px; }
@@ -1095,7 +1095,7 @@ template {
       padding-top: 124px; }
   .descrip-card {
     width: 100%;
-    max-width: 500px;
+    max-width: 7 00px;
     margin: auto; }
     .descrip-card__item {
       width: 100%;
@@ -1121,6 +1121,21 @@ template {
       left: -55px; }
     .direc-card__item .button {
       margin: 40px 0; }
+  .program-card__item-inner {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 200px;
+    height: 255px; }
+  .program-card__item img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+  .program-card__item span {
+    margin-top: -51px;
+    font-size: 16px;
+    height: 46px;
+    max-width: 170px; }
   .program-card__text {
     max-width: 220px; }
   .program .section__title {
@@ -1302,21 +1317,6 @@ template {
         max-width: 154px;
         height: 37px;
         margin-top: 20px; }
-  .program-card__item-inner {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 200px;
-    height: 255px; }
-  .program-card__item img {
-    height: 100%;
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover; }
-  .program-card__item span {
-    margin-top: -51px;
-    font-size: 16px;
-    height: 46px;
-    max-width: 170px; }
   .program-card__text {
     max-width: 200px;
     height: 255px; }

@@ -1,8 +1,14 @@
 .bonus {
-    .section__text {
-        width: 100%;
-        max-width: 651px;
+    .section {
+        &__title {
+            margin-top: 200px;
+        }
+        &__text {
+            width: 100%;
+            max-width: 651px;
+        }
     }
+        
     
     &-card {
         display: block;
