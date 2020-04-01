@@ -963,7 +963,7 @@ template {
 
 .footer {
   display: block;
-  margin-bottom: 183px; }
+  margin-bottom: 68px; }
   .footer__title {
     text-align: center;
     font-size: 42px;
@@ -988,8 +988,7 @@ template {
     margin: auto; }
     .footer-content__item {
       width: 100%;
-      max-width: 220px;
-      padding-top: 15px; }
+      max-width: 220px; }
       .footer-content__item .card {
         display: -webkit-box;
         display: flex;
@@ -1053,7 +1052,27 @@ template {
   .bonus .slick-prev {
     left: 9px; }
   .bonus .slick-next {
-    right: 9px; } }
+    right: 9px; }
+  .footer__title {
+    margin: 0 auto;
+    margin-bottom: 30px; }
+  .footer-content {
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 600px;
+    max-height: 300px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column; }
+    .footer-content__item {
+      padding-top: 15px; }
+      .footer-content__item .card-row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column; }
+        .footer-content__item .card-row .card:nth-child(2) {
+          margin-top: 53px;
+          margin-left: 0; } }
 
 @media only screen and (max-width: 1080px) {
   .direc .section__title::after {
@@ -1210,27 +1229,7 @@ template {
     -webkit-box-ordinal-group: 3;
     order: 2; }
   .regis .slick-dots {
-    bottom: -59px; }
-  .footer__title {
-    margin: 0 auto;
-    margin-bottom: 30px; }
-  .footer-content {
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 600px;
-    max-height: 300px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column; }
-    .footer-content__item {
-      padding-top: 15px; }
-      .footer-content__item .card-row {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        flex-direction: column; }
-        .footer-content__item .card-row .card:nth-child(2) {
-          margin-top: 53px;
-          margin-left: 0; } }
+    bottom: -59px; } }
 
 @media only screen and (max-width: 768px) {
   .header .logo img {
