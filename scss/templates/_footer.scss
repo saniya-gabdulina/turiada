@@ -27,7 +27,8 @@
         margin: auto;
         &__item {
             width: 100%;
-            max-width: 380px;
+            max-width: 220px;
+            padding-top: 15px;
             .card {
                 display: flex;
                 width: 100%;
