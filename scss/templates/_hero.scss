@@ -21,6 +21,10 @@
         color: #181818;
     }
     .button {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        text-decoration: none;
         text-transform: uppercase;
         font-weight: bold;
         font-size: 16px;
@@ -35,5 +39,8 @@
         margin-left: 7px;
         cursor: pointer;
         border: none;
+        span {
+            margin: 0 auto;
+        }
     }
 }
