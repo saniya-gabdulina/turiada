@@ -811,7 +811,7 @@ template {
     border: none; }
 
 .bonus .section__title {
-  margin-top: 200px; }
+  margin-top: 63px; }
 
 .bonus .section__text {
   width: 100%;
@@ -892,6 +892,8 @@ template {
 .regis {
   display: block;
   margin-bottom: 158px; }
+  .regis .section__title {
+    margin-top: 176px; }
   .regis-card {
     position: relative;
     display: -webkit-box;

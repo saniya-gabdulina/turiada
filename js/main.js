@@ -200,5 +200,33 @@ $(document).ready(function () {
 	$(window).resize(function() {
 		sliderOnMobile();
 	})
+
+
+	$('.news__form').validate ({
+		errorClass: "invalid" ,
+		errorElement: "em" ,
+		rules: {
+			userName: {
+				requaired: true,
+				minlength: 2,
+				maxlength: 30,
+			},
+			userEmail: {
+				required: true,
+				email: true
+			}
+		},
+		messages: {
+			userName: {
+				required: "Обязательно",
+				minlength: "Не короче 2 букв",
+				maxlength: "Не длиннее 30 букв",
+			},
+			userEmail: {
+				required: "Обязательно укажите email",
+				email: "Введите в формате: name@domail.com"
+			}
+		}
+	})
 });
 
