@@ -202,31 +202,76 @@ $(document).ready(function () {
 	})
 
 
-	$('.news__form').validate ({
-		errorClass: "invalid" ,
-		errorElement: "em" ,
-		rules: {
-			userName: {
-				requaired: true,
-				minlength: 2,
-				maxlength: 30,
-			},
-			userEmail: {
-				required: true,
-				email: true
-			}
-		},
-		messages: {
-			userName: {
-				required: "Обязательно",
-				minlength: "Не короче 2 букв",
-				maxlength: "Не длиннее 30 букв",
-			},
-			userEmail: {
-				required: "Обязательно укажите email",
-				email: "Введите в формате: name@domail.com"
-			}
-		}
-	})
+	// $('.news__form').validate ({
+	// 	errorClass: "invalid" ,
+	// 	errorElement: "em" ,
+	// 	rules: {
+	// 		userName: {
+	// 			requaired: true,
+	// 			minlength: 2,
+	// 			maxlength: 30,
+	// 		},
+	// 		userEmail: {
+	// 			required: true,
+	// 			email: true
+	// 		}
+	// 	},
+	// 	messages: {
+	// 		userName: {
+	// 			required: "Обязательно",
+	// 			minlength: "Не короче 2 букв",
+	// 			maxlength: "Не длиннее 30 букв",
+	// 		},
+	// 		userEmail: {
+	// 			required: "Обязательно укажите email",
+	// 			email: "Введите в формате: name@domail.com"
+	// 		}
+	// 	}
+	// })
+	function validateForm1(form) {
+        $('.news__form').validate({
+            errorClass: "invalid",
+            rules: {
+                // simple rule, converted to {required:true}
+                userName: {
+                    required: true,
+                    minlength: 2,
+                    maxlength: 10
+                },
+            },
+            errorElement: "span",
+            messages: {
+                userName: {
+                    required: "Имя обязательно",
+                    minlength: "Имя не короче 2 букв",
+                    maxlength: "Имя не длиннее 10 букв"
+                },
+                
+
+            },
+            submitHandler: function (form) {
+                $.ajax({
+                    type: "POST",
+                    url: "/send.php",
+                    data: $(form).serialize(),
+                    // success: function (response) {
+                    //     $('.modal-thanks').addClass('modal--visible');
+                    //     $('#modal-form')[0].reset();
+                    //     $.fancybox.close();
+                    //     setTimeout(function () {
+                    //         $('.modal-thanks').removeClass('modal--visible');
+                    //     }, 2000); //убирает окно благодарности через 2000мс (2 секунды) 
+                    // },
+                    // error: function (response) {
+                    //     $('.modal-error').addClass('modal--visible');
+                    //     $.fancybox.close();
+                    //     setTimeout(function () {
+                    //         $('.modal-error').removeClass('modal--visible');
+                    //     }, 3000); //убирает окно благодарности через 2000мс (2 секунды) 
+                    // }
+                });
+            }
+        });
+    }
 });
 

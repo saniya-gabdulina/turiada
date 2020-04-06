@@ -278,10 +278,10 @@
                 <p class="section__text">Вы уже сейчас можете подисаться на наши новости и не пропустить ни одного
                     интересного мероприятия. Также Вы можете зарегестрироваться в нашей туриаде и мы будет приглашать
                     вас на каждое мероприятие.<br><span>Мы не присылаем спам, не пишем чаще чем раз в неделю</span></p>
-                <form action="" class="news__form" id="news__form">
+                <form action="send.php" method="POST" class="news__form" id="news__form">
                     <input type="text" name="userName" class="news__form-input" placeholder="Имя и Фамилия">
-                    <input type="text" name="userEmail" class="news__form-input" placeholder="Email">
-                    <button class="button">Подписаться</button>
+                    <input type="email" name="userEmail" class="news__form-input" placeholder="Email">
+                    <button class="button" type="submit">Подписаться</button>
                 </form>
             </div>
         </section>
@@ -426,8 +426,10 @@
             </div>
         </div>
     </footer>
+    
     <script  src="js/jquery-1.11.0.min.js"></script>
     <script  src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script  src="js/slick.min.js"></script>
     <!-- <script src="js/jquery-3.4.1.min.js"></script> -->
     <script src="js/main.js"></script>
