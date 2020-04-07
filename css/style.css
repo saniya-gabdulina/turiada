@@ -53,6 +53,34 @@ body {
       border-radius: 50%;
       background-color: black; }
 
+em {
+  color: red;
+  margin: auto;
+  margin-top: -13px; }
+
+.modal-thanks, .modal-error {
+  display: none;
+  position: fixed;
+  background: #314c72;
+  opacity: 0.8;
+  color: #fff;
+  max-width: 340px;
+  height: 100px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 9999;
+  font-size: 23px;
+  text-align: center;
+  box-shadow: 0px 10px 30px rgba(149, 192, 255, 0.5);
+  border-radius: 13px;
+  padding: 23px; }
+
+.modal--visible {
+  display: block; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -417,7 +445,7 @@ template {
         padding-right: 13px;
         -webkit-box-align: center;
         align-items: center;
-        width: 121px;
+        width: 125px;
         height: 40px; }
         .header-nav .social-vk::before {
           content: '';
@@ -781,6 +809,7 @@ template {
     margin-top: 33px;
     margin-bottom: 29px; }
   .news__form {
+    position: relative;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -795,7 +824,8 @@ template {
     margin-bottom: 12px;
     outline: none;
     padding-left: 26px;
-    font-size: 16px; }
+    font-size: 16px;
+    position: relative; }
   .news .button {
     text-transform: uppercase;
     font-weight: bold;
